@@ -1,0 +1,2157 @@
+/* style.css - MangaZERO
+   Every well-formed <style> block from the single-file build, in original
+   document order, contents unchanged. 18 blocks. */
+
+/* ===== block 1 of 18 | original line 21 | <style > ===== */
+/* =========================================
+   GENERAL
+========================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html,
+body{
+    background:#090711;
+    color:#ffffff;
+    font-family:Arial,Tahoma,sans-serif;
+    min-height:100%;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header{
+
+    height:92px;
+
+    padding:15px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:#100d1a;
+
+    border-bottom:1px solid #292333;
+
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logo{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:27px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4c98,
+            #824cff
+        );
+
+    box-shadow:
+        0 0 25px
+        rgba(140,70,255,.3);
+
+}
+
+.brand-name{
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+.brand-name span{
+
+    color:#ff72b5;
+
+}
+
+
+/* =========================================
+   ADMIN BUTTON
+========================================= */
+
+.admin-main-button{
+
+    padding:13px 17px;
+
+    border-radius:16px;
+
+    background:#824cff;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    box-shadow:
+        0 0 20px
+        rgba(130,76,255,.25);
+
+}
+
+.admin-main-button:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* =========================================
+   NORMAL NAV
+========================================= */
+
+.normal-nav,
+.admin-nav{
+
+    margin:17px 15px;
+
+    padding:7px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#171321;
+
+    border:1px solid #292333;
+
+    border-radius:20px;
+
+}
+
+.normal-nav button,
+.admin-nav button{
+
+    flex:1;
+
+    min-height:58px;
+
+    border-radius:15px;
+
+    background:transparent;
+
+    color:#aaa5b2;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.normal-nav button.active,
+.admin-nav button.active{
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9655ff,
+            #7844e9
+        );
+
+    box-shadow:
+        0 0 20px
+        rgba(130,76,255,.3);
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box{
+
+    height:62px;
+
+    margin:25px 15px;
+
+    padding:0 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#12101b;
+
+    border:1px solid #302a3a;
+
+    border-radius:20px;
+
+}
+
+.search-icon{
+
+    font-size:24px;
+
+    color:#8b8494;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.search-box input::placeholder{
+
+    color:#77717f;
+
+}
+
+
+/* =========================================
+   ONLINE
+========================================= */
+
+.online{
+
+    margin:
+        0 20px 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#aaa4b0;
+
+    font-weight:bold;
+
+}
+
+.online-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#12d99b;
+
+    box-shadow:
+        0 0 10px
+        #12d99b;
+
+}
+
+
+/* =========================================
+   TITLES
+========================================= */
+
+.section-title{
+
+    margin:20px;
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty-library{
+
+    text-align:center;
+
+    margin-top:75px;
+
+    color:#77717f;
+
+}
+
+.empty-library.hide{
+
+    display:none;
+
+}
+
+.empty-icon{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:24px;
+
+    background:#15121f;
+
+    font-size:38px;
+
+}
+
+.empty-library h2{
+
+    margin-top:22px;
+
+    color:#aaa5b1;
+
+    font-size:21px;
+
+}
+
+.empty-library p{
+
+    margin-top:10px;
+
+}
+
+
+/* =========================================
+   MANGA GRID
+========================================= */
+
+.manga-grid{
+
+    padding:0 15px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:14px;
+
+}
+
+.manga-card{
+
+    overflow:hidden;
+
+    background:#15131c;
+
+    border:1px solid #292533;
+
+    border-radius:18px;
+
+}
+
+.manga-cover{
+
+    height:155px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #272036,
+            #15121e
+        );
+
+    font-size:42px;
+
+}
+
+.manga-cover img{width:100%;height:100%;object-fit:cover;display:block;}
+.manga-cover.has-image{padding:0;}
+.manga-card{cursor:pointer;}
+.file-input-wrap{background:#12101a;border:1px dashed #514466;border-radius:14px;padding:12px;margin-bottom:12px;}
+.file-input-wrap label{display:block;color:#c9bfd5;font-size:13px;margin-bottom:8px;}
+.file-input-wrap input[type=file]{width:100%;color:#aaa1b3;}
+.manga-page{display:none;min-height:100vh;background:#0d0b13;padding-bottom:40px;}
+body[data-manga-open="1"] #mangaPage{display:block !important;}
+/* وضع قراءة الفصل: اخفاء كل تفاصيل المانجا والعنوان العلوي وترك القارئ فقط */
+body[data-chapter-reader="1"] #mangaPage > .manga-page-header{display:none !important;}
+body[data-chapter-reader="1"] #mangaPage > .manga-page-inner{max-width:none !important;margin:0 !important;padding:0 !important;}
+body[data-chapter-reader="1"] #mangaPage > .manga-page-inner > *:not(#chapterReader){display:none !important;}
+body[data-chapter-reader="1"] #mangaPage #chapterReader{display:block !important;width:100% !important;margin:0 !important;padding:0 !important;border:0 !important;border-radius:0 !important;}
+body[data-chapter-reader="1"] #mangaPage #chapterReader .reader-back{position:sticky;top:0;z-index:50;margin:0;padding:14px 16px;width:100%;box-sizing:border-box;border-radius:0;background:rgba(13,11,18,.96);backdrop-filter:blur(12px);border-left:0;border-right:0;}
+
+body[data-manga-open="1"] #sitePage,body[data-manga-open="1"] #adminPage{display:none !important;}
+.manga-page-header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:14px 16px;background:rgba(15,12,22,.96);border-bottom:1px solid #292533;}
+.manga-page-back{border:0;border-radius:12px;padding:10px 14px;background:#211a2d;color:#fff;font-weight:700;cursor:pointer;}
+.manga-page-title{font-size:19px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.manga-page-inner{max-width:850px;margin:auto;padding:20px 15px;}
+/* ===== MANGA PAGE — redesigned only inside the manga page ===== */
+#mangaPage{background:linear-gradient(180deg,#0d0b12 0%,#120e18 100%);min-height:100vh;}
+#mangaPage .manga-page-header{position:sticky;top:0;z-index:5;background:rgba(13,11,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);padding:12px 15px;display:flex;align-items:center;gap:12px;}
+#mangaPage .manga-page-title{font-weight:900;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#mangaPage .manga-page-inner{max-width:920px;margin:0 auto;padding:16px 14px 40px;}
+#mangaPage .manga-hero{position:relative;background:linear-gradient(145deg,#1a1522,#100d15);border:1px solid #2c2535;border-radius:22px;padding:16px;margin-bottom:14px;overflow:hidden;box-shadow:0 18px 55px rgba(0,0,0,.22);}
+#mangaPage .manga-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(166,87,229,.16),transparent 42%);pointer-events:none;}
+#mangaPage .manga-hero-main{position:relative;display:flex;gap:16px;align-items:flex-start;}
+#mangaPage .manga-hero-cover{width:132px;min-width:132px;height:188px;border-radius:15px;overflow:hidden;background:#292132;box-shadow:0 12px 28px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;font-size:42px;}
+#mangaPage .manga-hero-cover img{width:100%;height:100%;object-fit:cover;display:block;}
+#mangaPage .manga-hero-info{min-width:0;flex:1;}
+#mangaPage .manga-hero-info h2{font-size:24px;line-height:1.3;margin:2px 0 7px;color:#fff;}
+#mangaPage .manga-author{color:#a99fb0;font-size:13px;margin-bottom:10px;}
+#mangaPage .manga-rating-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;}
+#mangaPage .manga-rating{color:#ffd35c;font-weight:900;font-size:14px;}
+#mangaPage .manga-rating-count{color:#8f8795;font-size:12px;}
+#mangaPage .manga-stars{display:inline-flex;align-items:center;gap:2px;direction:ltr;}
+#mangaPage .rating-star{font-size:20px;line-height:1;color:#4a414f;text-shadow:0 1px 3px rgba(0,0,0,.25);}
+#mangaPage .rating-star.filled{color:#ffd35c;text-shadow:0 0 8px rgba(255,211,92,.25);}
+#mangaPage .manga-rating-number{color:#fff;font-size:13px;font-weight:900;}
+#mangaPage .manga-rating-line{align-items:center;}
+#mangaPage .manga-stars{cursor:pointer;user-select:none;}
+#mangaPage .manga-stars .rating-star{cursor:pointer;transition:transform .12s,color .12s,text-shadow .12s;}
+#mangaPage .manga-stars .rating-star:hover{transform:scale(1.16);color:#ffd35c;}
+#mangaPage .manga-rate-picker{display:none;align-items:center;gap:5px;margin-top:8px;padding:8px 10px;border:1px solid #352b40;background:#15111b;border-radius:14px;width:max-content;max-width:100%;}
+#mangaPage .manga-rate-picker.open{display:flex;}
+#mangaPage .manga-rate-picker .pick-star{border:0;background:transparent;color:#4a414f;font-size:24px;line-height:1;padding:1px 3px;cursor:pointer;transition:.12s;}
+#mangaPage .manga-rate-picker .pick-star:hover,#mangaPage .manga-rate-picker .pick-star.selected{color:#ffd35c;text-shadow:0 0 8px rgba(255,211,92,.25);transform:scale(1.08);}
+#mangaPage .manga-rate-picker-label{color:#aaa0b0;font-size:11px;margin-right:4px;white-space:nowrap;}
+
+#mangaPage .manga-tags{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 10px;}
+#mangaPage .manga-tag{border:1px solid #3a3044;background:#201927;color:#d8c9e3;border-radius:999px;padding:5px 9px;font-size:11px;}
+#mangaPage .manga-desc{color:#b9b0c1;font-size:13px;line-height:1.85;margin:8px 0 0;}
+#mangaPage .manga-quick-actions{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px;}
+#mangaPage .manga-quick-btn{border:1px solid #342b3d;background:#17131d;color:#e7e0eb;border-radius:12px;padding:11px 8px;font-weight:800;font-size:12px;cursor:pointer;transition:.15s;}
+#mangaPage .manga-quick-btn:hover{border-color:#8050a8;transform:translateY(-1px);}
+#mangaPage .manga-comment-quick{background:#5d3b78;border-color:#8050a8;color:#fff;}
+#mangaPage .manga-comment-quick:hover{background:#704793;border-color:#a76bd2;}
+#mangaPage .manga-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;}
+#mangaPage .manga-stat{background:#15111a;border:1px solid #2b2531;border-radius:13px;padding:10px 6px;text-align:center;}
+#mangaPage .manga-stat strong{display:block;color:#eee;font-size:14px;}
+#mangaPage .manga-stat span{display:block;color:#817987;font-size:11px;margin-top:4px;}
+#mangaPage .manga-page-actions{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px;padding:4px;background:#100d15;border:1px solid #282230;border-radius:15px;}
+#mangaPage .manga-page-action{border:0;border-radius:11px;padding:12px;background:transparent;color:#a9a0ad;font-weight:900;cursor:pointer;}
+#mangaPage .manga-page-action.active{background:#5d3b78;color:#fff;box-shadow:0 5px 16px rgba(91,55,120,.25);}
+#mangaPage .manga-section-card{background:#15121b;border:1px solid #2b2531;border-radius:18px;padding:14px;}
+#mangaPage .manga-section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;}
+#mangaPage .manga-section-head strong{font-size:16px;}
+#mangaPage .manga-section-head span{color:#817987;font-size:11px;}
+#mangaPage .chapter-list{display:flex;flex-direction:column;gap:9px;}
+#mangaPage .chapter-item{background:#17131d;border:1px solid #2b2531;border-radius:14px;padding:12px 13px;transition:.15s;}
+#mangaPage .chapter-item:hover{border-color:#704892;background:#1b1522;}
+#mangaPage .chapter-name{font-size:14px;font-weight:900;color:#f2edf4;}
+#mangaPage .chapter-meta{color:#827a88;font-size:11px;margin-top:5px;}
+#mangaPage .chapter-read{display:flex;align-items:center;gap:7px;color:#d8b8f0;font-size:12px;font-weight:900;white-space:nowrap;}
+#mangaPage .manga-fav-on{background:#34213f!important;border-color:#8a55ae!important;color:#e7c8ff!important;}
+#mangaPage .manga-admin-box{position:relative;margin-top:14px;}
+@media(max-width:560px){#mangaPage .manga-hero-main{gap:12px;}#mangaPage .manga-hero-cover{width:108px;min-width:108px;height:155px;}#mangaPage .manga-hero-info h2{font-size:20px;}#mangaPage .manga-desc{font-size:12px;line-height:1.7;}}
+@media(max-width:390px){#mangaPage .manga-hero-main{flex-direction:column;align-items:center;}#mangaPage .manga-hero-info{width:100%;text-align:center;}#mangaPage .manga-tags,#mangaPage .manga-rating-line{justify-content:center;}#mangaPage .manga-hero-cover{width:125px;min-width:125px;height:178px;}}
+.manga-detail{display:flex;gap:16px;align-items:flex-start;background:#15131c;border:1px solid #292533;border-radius:18px;padding:15px;margin-bottom:18px;}
+.manga-detail-cover{width:105px;min-width:105px;height:145px;border-radius:12px;overflow:hidden;background:#272036;display:flex;align-items:center;justify-content:center;font-size:38px;}
+.manga-detail-cover img{width:100%;height:100%;object-fit:cover;}
+.manga-detail-info{flex:1;min-width:0;}
+.manga-detail-info h2{margin:0;font-size:23px;}
+.manga-detail-info .detail-author{color:#aaa;margin-top:8px;}
+.manga-detail-info .detail-description{color:#77717e;margin-top:10px;line-height:1.8;}
+.manga-page-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 18px;}
+.manga-page-action{border:1px solid #332a40;border-radius:14px;padding:13px;background:#15131c;color:#fff;font-weight:800;cursor:pointer;}
+.manga-page-action.active{background:#281b38;border-color:#744a92;color:#e4c8ff;}
+.comments-box{background:#15131c;border:1px solid #292533;border-radius:18px;padding:15px;}
+.comment-form{display:flex;gap:8px;margin-bottom:15px;}
+.comment-form input{flex:1;min-width:0;background:#0f0d15;border:1px solid #332a40;color:#fff;border-radius:12px;padding:12px;outline:none;}
+.comment-form button{border:0;border-radius:12px;background:#744a92;color:#fff;font-weight:800;padding:0 16px;cursor:pointer;}
+.comment-item{background:#100e16;border:1px solid #292533;border-radius:12px;padding:12px;margin-bottom:9px;}
+.comment-user{font-weight:800;margin-bottom:5px;}
+.comment-text{color:#c7c0ce;line-height:1.6;}
+.chapter-list{display:flex;flex-direction:column;gap:10px;}
+.chapter-item{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#15131c;border:1px solid #292533;border-radius:14px;padding:13px 14px;cursor:pointer;}
+.chapter-item:hover{border-color:#744a92;}
+.chapter-item-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+.chapter-delete-btn{display:block!important;border:1px solid #6b263e;background:#3b1727;color:#ffb0c5;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:900;cursor:pointer;white-space:nowrap;}
+.chapter-delete-btn:hover{background:#5a1e34;border-color:#a74361;color:#fff;}
+.chapter-main-click{min-width:0;flex:1;}
+@media(max-width:600px){.chapter-item{align-items:flex-start;}.chapter-item-actions{flex-direction:column;align-items:stretch;}.chapter-delete-btn{width:100%;}.chapter-read{text-align:center;}}
+.chapter-name{font-weight:700;}
+.chapter-meta{color:#77717e;font-size:12px;margin-top:4px;}
+.chapter-reader{display:none;}
+.chapter-reader{
+    display:none;
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    background:#050408;
+}
+.chapter-reader .reader-back{
+    position:sticky;
+    top:0;
+    z-index:50;
+    display:inline-flex;
+    margin:0;
+    border:1px solid #332a40;
+    border-radius:0 0 14px 14px;
+    background:rgba(10,8,14,.94);
+    color:#fff;
+    padding:10px 16px;
+}
+.reader-title{
+    margin:0!important;
+    padding:14px 15px;
+    background:#050408;
+    color:#fff;
+    text-align:center;
+}
+.reader-pages{
+    background:#050408;
+    border-radius:0;
+    overflow:hidden;
+    width:100%;
+}
+.reader-pages img{
+    display:block;
+    width:auto;
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+    image-rendering:auto;
+}
+
+.next-chapter-wrap{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 15px 45px;
+    box-sizing:border-box;
+    background:#0b0910;
+}
+.next-chapter-btn{
+    width:100%;
+    border:1px solid #744a92;
+    border-radius:15px;
+    padding:15px 18px;
+    background:#281b38;
+    color:#fff;
+    font-size:16px;
+    font-weight:800;
+    cursor:pointer;
+    text-align:center;
+    transition:.15s ease;
+}
+.next-chapter-btn:hover{
+    transform:translateY(-1px);
+    border-color:#a66bc9;
+}
+.next-chapter-label{
+    display:block;
+    color:#bda8ca;
+    font-size:12px;
+    margin-bottom:5px;
+}
+.next-chapter-name{
+    display:block;
+    font-size:18px;
+    color:#fff;
+}
+.chapter-comments{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:24px 15px 50px;
+    box-sizing:border-box;
+    background:#0b0910;
+}
+.chapter-comments-head{
+    margin-bottom:14px;
+}
+.chapter-comments-subtitle{
+    color:#8d8596;
+    font-size:13px;
+    margin-top:4px;
+}
+.chapter-comments-box{
+    background:#15131c;
+    border:1px solid #292533;
+    border-radius:18px;
+    padding:15px;
+}
+.chapter-comments .comment-form{
+    display:flex;
+    gap:8px;
+    margin-bottom:15px;
+}
+.chapter-comments .comment-form input{
+    flex:1;
+    min-width:0;
+    min-height:48px;
+    box-sizing:border-box;
+    background:#0f0d15;
+    border:1px solid #332a40;
+    color:#fff;
+    border-radius:12px;
+    padding:12px;
+    outline:none;
+}
+.chapter-comments .comment-form button{
+    min-width:125px;
+    min-height:48px;
+    border:0;
+    border-radius:12px;
+    background:#744a92;
+    color:#fff;
+    font-weight:800;
+    padding:0 16px;
+    cursor:pointer;
+}
+.chapter-comment-item{
+    background:#100e16;
+    border:1px solid #292533;
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:9px;
+}
+.chapter-comment-user{
+    font-weight:800;
+    margin-bottom:5px;
+}
+.chapter-comment-text{
+    color:#c7c0ce;
+    line-height:1.6;
+    white-space:pre-wrap;
+    overflow-wrap:anywhere;
+}
+.chapter-comment-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:9px;
+}
+.chapter-comment-action{
+    border:1px solid #332a40;
+    border-radius:9px;
+    background:#17131d;
+    color:#ddd5e5;
+    padding:6px 9px;
+    cursor:pointer;
+    font-size:12px;
+}
+@media(max-width:520px){
+    .chapter-comments{padding:20px 10px 40px;}
+    .chapter-comments .comment-form{flex-direction:column;}
+    .chapter-comments .comment-form button{width:100%;}
+}
+html.mz-day-mode .chapter-reader,
+html.mz-day-mode .reader-title,
+html.mz-day-mode .reader-pages{background:#f4f1f7!important;color:#222!important;}
+html.mz-day-mode .chapter-comments{background:#f4f1f7!important;}
+html.mz-day-mode .next-chapter-wrap{background:#f4f1f7!important;}
+html.mz-day-mode .next-chapter-btn{background:#fff!important;color:#222!important;border-color:#744a92!important;}
+html.mz-day-mode .next-chapter-name{color:#222!important;}
+html.mz-day-mode .chapter-comments-box,
+html.mz-day-mode .chapter-comment-item{background:#fff!important;border-color:#ddd5e5!important;color:#222!important;}
+html.mz-day-mode .chapter-comments .comment-form input{background:#f8f6fa!important;color:#222!important;border-color:#d8d0df!important;}
+
+.chapter-reader img{display:block;width:100%;height:auto;margin:0 auto;}
+.reader-pages{background:#050408;border-radius:12px;overflow:hidden;}
+.reader-back{margin-bottom:14px;}
+.page-empty{text-align:center;color:#77717e;padding:30px 10px;}
+@media(max-width:520px){.manga-detail{flex-direction:column;}.manga-detail-cover{width:130px;min-width:130px;height:180px;margin:auto;}}
+
+.manga-info{
+
+    padding:14px;
+
+}
+
+.manga-info h3{
+
+    font-size:17px;
+
+}
+
+.manga-info p{
+
+    margin-top:7px;
+
+    color:#77717e;
+
+    font-size:13px;
+
+}
+
+
+/* =========================================
+   ADMIN PAGE
+========================================= */
+
+#adminPage{
+
+    display:none;
+
+    padding-bottom:40px;
+
+}
+
+
+/* =========================================
+   ADMIN STATS
+========================================= */
+
+.stats{
+
+    padding:0 15px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+.stat{
+
+    min-height:170px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    background:#15131c;
+
+    border:1px solid #292533;
+
+    border-radius:20px;
+
+}
+
+.stat-icon{
+
+    width:58px;
+
+    height:58px;
+
+    margin-bottom:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    font-size:27px;
+
+}
+
+.blue{
+
+    background:#092e48;
+
+}
+
+.purple{
+
+    background:#28164b;
+
+}
+
+.green{
+
+    background:#083b36;
+
+}
+
+.yellow{
+
+    background:#493014;
+
+}
+
+.stat-number{
+
+    font-size:29px;
+
+    font-weight:800;
+
+}
+
+.stat-name{
+
+    margin-top:5px;
+
+    color:#77717e;
+
+}
+
+
+/* =========================================
+   ADMIN TABS
+========================================= */
+
+.admin-tabs{
+
+    margin:22px 15px;
+
+    padding:6px;
+
+    display:flex;
+
+    background:#171321;
+
+    border:1px solid #292333;
+
+    border-radius:20px;
+
+}
+
+.admin-tab{
+
+    flex:1;
+
+    height:88px;
+
+    border-radius:16px;
+
+    background:transparent;
+
+    color:#aaa5b2;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+}
+
+.admin-tab span{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    font-size:24px;
+
+}
+
+.admin-tab.active{
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9655ff,
+            #7844e9
+        );
+
+}
+
+
+/* =========================================
+   ADD MANGA
+========================================= */
+
+.add-box{
+
+    margin:
+        0 15px 25px;
+
+    overflow:hidden;
+
+    background:#171321;
+
+    border:1px solid #292333;
+
+    border-radius:20px;
+
+}
+
+.add-header{
+
+    min-height:80px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.add-title{
+
+    font-size:19px;
+
+    font-weight:800;
+
+}
+
+.add-plus{
+
+    font-size:30px;
+
+    color:#ff70ad;
+
+}
+
+.add-form{
+
+    display:none;
+
+    padding:
+        0 18px 22px;
+
+}
+
+.add-form.open{
+
+    display:block;
+
+}
+
+.input{
+
+    width:100%;
+
+    height:53px;
+
+    margin-top:11px;
+
+    padding:0 14px;
+
+    border:1px solid #302a3b;
+
+    border-radius:14px;
+
+    outline:none;
+
+    background:#0f0d16;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.textarea{
+
+    height:100px;
+
+    padding-top:14px;
+
+    resize:none;
+
+}
+
+.save-button{
+
+    width:100%;
+
+    height:53px;
+
+    margin-top:14px;
+
+    border-radius:14px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9655ff,
+            #7844e9
+        );
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+
+/* =========================================
+   ADMIN CONTENT
+========================================= */
+
+.admin-content{
+
+    padding:0 15px;
+
+}
+
+.admin-section-title{
+
+    margin:25px 0;
+
+    font-size:23px;
+
+    font-weight:800;
+
+}
+
+.admin-empty{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    color:#77717e;
+
+    font-size:16px;
+
+}
+
+
+/* =========================================
+   EXIT
+========================================= */
+
+.exit-button{
+
+    width:
+        calc(100% - 30px);
+
+    height:55px;
+
+    margin:30px 15px;
+
+    border:1px solid #342d42;
+
+    border-radius:16px;
+
+    background:#171321;
+
+    color:#aaa5b2;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+.exit-button:active{
+
+    background:#251d32;
+
+    color:white;
+
+}
+
+
+/* =========================================
+   TOAST
+========================================= */
+
+#toast{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%)
+        translateY(100px);
+
+    min-width:220px;
+
+    max-width:90%;
+
+    padding:14px 20px;
+
+    text-align:center;
+
+    background:#201a2b;
+
+    border:1px solid #493b5d;
+
+    border-radius:14px;
+
+    color:white;
+
+    opacity:0;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:380px){
+
+    .brand-name{
+
+        font-size:20px;
+
+    }
+
+    .admin-main-button{
+
+        padding:11px 13px;
+
+        font-size:13px;
+
+    }
+
+    .normal-nav button,
+    .admin-nav button{
+
+        font-size:11px;
+
+    }
+
+}
+
+
+/* ===== PROFILE BACKGROUNDS — profile only, visible to every visitor ===== */
+.mz-public-profile-card,.mz-profile-card{position:relative;overflow:hidden;isolation:isolate;}
+.mz-public-profile-card > *, .mz-profile-card > *{position:relative;z-index:2;}
+.mz-profile-bg-layer{position:absolute!important;inset:0;z-index:0!important;pointer-events:none;overflow:hidden;border-radius:inherit;}
+.mz-profile-bg-layer:before,.mz-profile-bg-layer:after{content:"";position:absolute;inset:-20%;pointer-events:none;}
+.mz-bg-aurora{background:radial-gradient(circle at 15% 15%,rgba(0,229,255,.38),transparent 30%),radial-gradient(circle at 85% 80%,rgba(255,0,153,.34),transparent 35%),linear-gradient(135deg,#10152f,#27133d 48%,#071d2e);}
+.mz-bg-neon{background:linear-gradient(135deg,#090014,#1a0033 45%,#001b32);}
+.mz-bg-neon:before{background:repeating-linear-gradient(115deg,transparent 0 22px,rgba(0,229,255,.12) 23px 25px,transparent 26px 48px);animation:mzProfileLines 5s linear infinite;}
+.mz-bg-sakura{background:radial-gradient(circle at 70% 20%,rgba(255,128,196,.35),transparent 35%),linear-gradient(145deg,#28142b,#160f25 55%,#30132a);}
+.mz-bg-cosmic{background:radial-gradient(circle at 50% 35%,rgba(122,79,255,.38),transparent 30%),radial-gradient(circle at 20% 80%,rgba(0,180,255,.26),transparent 28%),linear-gradient(135deg,#060817,#12072b,#041323);}
+.mz-bg-cosmic:after{background-image:radial-gradient(circle,rgba(255,255,255,.85) 0 1px,transparent 1.5px);background-size:42px 42px;opacity:.35;animation:mzStars 12s linear infinite;}
+.mz-bg-void{background:radial-gradient(circle at 50% 20%,rgba(155,80,255,.25),transparent 32%),linear-gradient(145deg,#050509,#12071d 55%,#020308);}
+.mz-bg-admin{background:radial-gradient(circle at 50% 20%,rgba(0,229,255,.25),transparent 22%),radial-gradient(circle at 80% 80%,rgba(160,0,255,.34),transparent 28%),linear-gradient(135deg,#03050c,#08132b 45%,#14051e 75%,#020207);}
+.mz-bg-admin_gold{background:radial-gradient(circle at 20% 20%,rgba(255,215,64,.85),transparent 26%),radial-gradient(circle at 80% 70%,rgba(255,152,0,.7),transparent 30%),linear-gradient(135deg,#160b00,#5b3500,#1b0b00);background-size:140% 140%,160% 160%,100% 100%;animation:mzAdminAura 3s ease-in-out infinite;}
+.mz-bg-admin_void{background:radial-gradient(circle at 50% 25%,rgba(0,229,255,.3),transparent 25%),radial-gradient(circle at 30% 80%,rgba(124,77,255,.35),transparent 30%),linear-gradient(135deg,#02030a,#09051a,#02030a);background-size:150% 150%,160% 160%,100% 100%;animation:mzAdminAura 3.5s ease-in-out infinite;}
+
+.mz-bg-admin:before{background:conic-gradient(from 0deg,transparent,rgba(0,229,255,.28),transparent 18%,rgba(194,72,255,.28),transparent 42%,rgba(0,255,190,.18),transparent 65%,rgba(0,229,255,.28),transparent);filter:blur(20px);animation:mzAdminAura 7s linear infinite;}
+.mz-bg-admin:after{inset:8%;border:1px solid rgba(120,220,255,.28);border-radius:28px;box-shadow:0 0 35px rgba(0,190,255,.18),inset 0 0 45px rgba(160,0,255,.12);animation:mzAdminRing 4s ease-in-out infinite;}
+.mz-profile-bg-content-shade{position:absolute!important;inset:0;z-index:1!important;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.30));pointer-events:none;}
+.mz-profile-bg-badge{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:5px 9px;border-radius:999px;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.14);font-size:11px;color:#fff;backdrop-filter:blur(6px);}
+@keyframes mzProfileLines{to{transform:translate3d(120px,60px,0)}}
+@keyframes mzStars{to{transform:translate3d(42px,42px,0)}}
+@keyframes mzAdminAura{to{transform:rotate(360deg)}}
+@keyframes mzAdminRing{0%,100%{transform:scale(.98) rotate(0);opacity:.65}50%{transform:scale(1.02) rotate(2deg);opacity:1}}
+@media(prefers-reduced-motion:reduce){.mz-bg-neon:before,.mz-bg-cosmic:after,.mz-bg-admin:before,.mz-bg-admin:after{animation:none!important}}
+
+/* ===== PROFILE + THEME ===== */
+.mz-profile-page{display:none;position:fixed;inset:0;z-index:10000;background:#0b0910;padding:0;overflow:auto;}
+.mz-profile-card{width:100%;min-height:100%;box-sizing:border-box;margin:0;background:#15131c;border:0;border-radius:0;padding:24px clamp(14px,4vw,44px) 40px;box-shadow:none;color:#fff;}
+.mz-profile-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:20px;}
+.mz-profile-icon{font-size:34px;margin-bottom:4px;}
+.mz-profile-head h2{margin:0;font-size:22px;}
+.mz-profile-head p{margin:6px 0 0;color:#aaa5b2;font-size:13px;line-height:1.7;}
+.mz-profile-block{background:#100e16;border:1px solid #292533;border-radius:16px;padding:15px;margin-top:14px;}
+.mz-profile-block label{display:block;font-weight:800;margin-bottom:9px;}
+.mz-profile-input{width:100%;box-sizing:border-box;background:#0b0910;border:1px solid #3a3046;color:#fff;border-radius:12px;padding:13px;outline:none;font-size:15px;}
+.mz-profile-input:disabled{opacity:.75;cursor:not-allowed;}
+.mz-profile-hint{color:#8f8899;font-size:12px;line-height:1.7;margin-top:8px;}
+.mz-profile-save{width:100%;border:0;border-radius:12px;padding:12px;margin-top:12px;background:#744a92;color:#fff;font-weight:800;cursor:pointer;}
+.mz-profile-save:disabled{opacity:.55;cursor:not-allowed;}
+.mz-theme-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.mz-theme-btn{border:1px solid #3a3046;border-radius:12px;padding:12px;background:#0b0910;color:#fff;font-weight:800;cursor:pointer;}
+.mz-theme-btn.active{background:#744a92;border-color:#a86bd0;}
+.mz-public-profile-page{display:none;position:fixed;inset:0;z-index:10003;background:#0b0910;padding:0;overflow:auto;}
+.mz-public-profile-card{width:100%;min-height:100%;box-sizing:border-box;margin:0;background:#15131c;border:0;border-radius:0;padding:24px clamp(14px,4vw,44px) 40px;box-shadow:none;color:#fff;}
+.mz-public-profile-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:18px;}
+.mz-public-profile-user{display:flex;align-items:center;gap:14px;min-width:0;}
+.mz-public-profile-avatar{width:76px;height:76px;border-radius:50%;object-fit:cover;background:#292231;border:2px solid rgba(255,255,255,.12);flex:0 0 auto;}
+.mz-public-profile-avatar-fallback{width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#744a92;font-size:34px;flex:0 0 auto;}
+.mz-public-profile-name{font-size:23px;font-weight:900;line-height:1.3;word-break:break-word;}
+.mz-public-profile-title{margin-top:6px;}
+.mz-public-profile-bio{background:#100e16;border:1px solid #292533;border-radius:16px;padding:15px;margin-top:14px;white-space:pre-wrap;line-height:1.8;color:#d8d2df;}
+.mz-profile-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px;}
+.mz-profile-stat{background:#100e16;border:1px solid #292533;border-radius:16px;padding:16px;text-align:center;}
+.mz-profile-stat-number{font-size:25px;font-weight:950;line-height:1.2;}
+.mz-profile-stat-label{display:block;margin-top:7px;color:#aaa5b2;font-size:12px;font-weight:800;}
+@media(max-width:600px){.mz-profile-stats{grid-template-columns:1fr 1fr;}.mz-profile-stat:last-child{grid-column:1/-1;}}
+.mz-public-profile-section{margin-top:16px;}
+.mz-public-profile-section h3{margin:0 0 10px;font-size:17px;}
+.mz-public-favorites{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;}
+.mz-public-fav{border:1px solid #30283a;background:#100e16;border-radius:15px;overflow:hidden;cursor:pointer;text-align:right;color:#fff;padding:0;}
+.mz-public-fav-cover{height:190px;background:#211b29;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.mz-public-fav-cover img{width:100%;height:100%;object-fit:cover;}
+.mz-public-fav-name{padding:10px;font-weight:800;font-size:13px;line-height:1.5;}
+.mz-public-empty{padding:22px;text-align:center;color:#8f8899;background:#100e16;border:1px dashed #332b3d;border-radius:15px;}
+.mz-profile-textarea{min-height:105px;resize:vertical;font-family:inherit;line-height:1.7;}
+.mz-clickable-profile{cursor:pointer;}
+.mz-profile-click-target{cursor:pointer;}
+.mz-profile-click-target:hover .mz-comment-name,.mz-profile-click-target:hover .mz-title-badge,.mz-profile-click-target:hover .admin-name-wrap{text-decoration:underline;text-underline-offset:3px;}
+.mz-profile-click-target:focus{outline:2px solid #a657e5;outline-offset:3px;border-radius:12px;}
+.mz-clickable-profile:hover{text-decoration:underline;text-underline-offset:3px;}
+html.mz-day-mode .mz-public-profile-card,html.mz-day-mode .mz-public-profile-bio,html.mz-day-mode .mz-public-fav,html.mz-day-mode .mz-public-empty,html.mz-day-mode .mz-profile-stat{background:#fff!important;color:#222!important;border-color:#ddd5e5!important;}
+html.mz-day-mode .mz-public-profile-bio{color:#555!important;}
+@media(max-width:600px){.mz-public-profile-card{margin:0;padding:15px 12px 30px;border-radius:0}.mz-public-profile-head{flex-direction:column}.mz-public-profile-user{width:100%}.mz-public-profile-avatar,.mz-public-profile-avatar-fallback{width:64px;height:64px}.mz-public-profile-avatar-fallback{font-size:28px}.mz-public-profile-name{font-size:20px}.mz-public-favorites{grid-template-columns:repeat(2,minmax(0,1fr))}.mz-public-fav-cover{height:150px}}
+
+
+/* ===== PROFILE PAGE POLISH ===== */
+.mz-profile-page{display:none;position:fixed;inset:0;z-index:10000;background:radial-gradient(circle at 50% 0%,rgba(126,65,170,.18),transparent 38%),#090711;overflow:auto;padding:0!important;}
+.mz-profile-card{position:relative;width:100%;min-height:100%;margin:0!important;padding:0 0 42px!important;background:linear-gradient(180deg,rgba(20,15,28,.98),rgba(9,7,17,.99))!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important;}
+.mz-profile-topbar{position:sticky;top:0;z-index:20;height:64px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 clamp(12px,4vw,44px);background:rgba(10,8,17,.84);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px);}
+.mz-profile-back{justify-self:start;border:1px solid #3b3048;border-radius:12px;padding:10px 14px;background:#17121f;color:#fff;font-weight:900;cursor:pointer;}
+.mz-profile-top-title{font-size:18px;font-weight:950;letter-spacing:.2px;}
+.mz-profile-top-spacer{width:42px;}
+.mz-profile-hero{position:relative;display:flex;align-items:center;gap:18px;max-width:1050px;margin:24px auto 0;padding:24px clamp(16px,4vw,34px);border:1px solid rgba(255,255,255,.09);border-radius:24px;background:linear-gradient(135deg,rgba(42,26,57,.9),rgba(18,14,27,.94));box-shadow:0 20px 60px rgba(0,0,0,.28);overflow:hidden;}
+.mz-profile-hero:after{content:"";position:absolute;inset:auto -15% -65%;height:180px;background:radial-gradient(ellipse,rgba(166,87,229,.24),transparent 65%);pointer-events:none;}
+.mz-profile-hero-avatar{width:94px;height:94px;min-width:94px;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#2b2036;border:3px solid rgba(255,255,255,.15);box-shadow:0 0 0 7px rgba(166,87,229,.08),0 14px 35px rgba(0,0,0,.35);font-size:40px;}
+.mz-profile-hero-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+.mz-profile-hero-info{min-width:0;flex:1;position:relative;z-index:2;}
+.mz-profile-hero-name{font-size:28px;font-weight:950;word-break:break-word;}
+.mz-profile-hero-sub{margin-top:5px;color:#a9a0b2;font-size:13px;line-height:1.6;}
+.mz-profile-hero-badge{display:inline-flex;margin-top:10px;padding:6px 10px;border-radius:999px;background:rgba(166,87,229,.15);border:1px solid rgba(190,125,230,.25);color:#ead8f7;font-size:12px;font-weight:900;}
+.mz-profile-points-card{position:relative;z-index:2;min-width:108px;padding:13px 15px;border:1px solid rgba(255,211,92,.2);border-radius:16px;background:rgba(255,193,7,.07);text-align:center;}
+.mz-profile-points-card span{font-size:18px}.mz-profile-points-card b{display:block;font-size:25px;margin-top:2px}.mz-profile-points-card small{color:#b8aebf;font-size:11px;}
+.mz-profile-stats-hero{max-width:1050px;margin:14px auto 0!important;padding:0 0!important;}
+.mz-profile-stats-hero .mz-profile-stat{background:rgba(18,14,25,.9);border-color:rgba(255,255,255,.08);}
+.mz-profile-section-grid{max-width:1050px;margin:14px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.mz-profile-section-card{margin-top:0!important;background:rgba(16,13,22,.92)!important;border-color:rgba(255,255,255,.08)!important;border-radius:20px!important;padding:18px!important;}
+.mz-profile-section-title{display:flex;align-items:flex-start;gap:11px;margin-bottom:14px;}
+.mz-profile-section-title>span{width:36px;height:36px;min-width:36px;display:flex;align-items:center;justify-content:center;border-radius:11px;background:rgba(166,87,229,.13);border:1px solid rgba(166,87,229,.18);font-size:17px;}
+.mz-profile-section-title b{display:block;font-size:15px}.mz-profile-section-title small{display:block;color:#8f8899;font-size:11px;margin-top:4px;line-height:1.6;}
+.mz-profile-avatar-edit{display:flex;align-items:center;gap:14px;}
+.mz-profile-avatar-preview{width:68px;height:68px;min-width:68px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#2a2034;border:2px solid #49375a;font-size:28px;}
+.mz-profile-avatar-preview img{width:100%;height:100%;object-fit:cover;}
+.mz-profile-avatar-actions{display:flex;gap:8px;flex-wrap:wrap;}
+.mz-profile-primary-action,.mz-profile-secondary-action{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 13px;border-radius:11px;font-size:12px;font-weight:900;cursor:pointer;}
+.mz-profile-primary-action{background:#744a92;color:#fff}.mz-profile-primary-action input{display:none}.mz-profile-secondary-action{background:#17131d;color:#cfc5d8;border:1px solid #3a3046;}
+.mz-profile-input{background:#0c0911!important;border-color:#382e45!important;}
+.mz-profile-save{background:linear-gradient(135deg,#8a55ae,#633b82)!important;box-shadow:0 8px 20px rgba(99,59,130,.18);}
+.mz-profile-select-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
+.mz-admin-title-select{width:100%;height:46px;padding:0 12px;border-radius:12px;background:#0c0911;color:#fff;border:1px solid #3a3046;outline:none;}
+.mz-profile-current-bg{margin-bottom:10px;padding:10px 12px;border-radius:12px;background:#0c0911;border:1px solid #30273b;color:#b9afc2;font-size:12px;}
+.mz-profile-footer-note{max-width:1050px;margin:20px auto 0;text-align:center;color:#625b6b;font-size:11px;}
+html.mz-day-mode .mz-profile-page{background:#f4f1f7!important}html.mz-day-mode .mz-profile-card{background:#f4f1f7!important}html.mz-day-mode .mz-profile-topbar{background:rgba(255,255,255,.9);border-color:#ddd5e5}html.mz-day-mode .mz-profile-back{background:#fff;color:#222;border-color:#ddd5e5}html.mz-day-mode .mz-profile-top-title{color:#222}html.mz-day-mode .mz-profile-hero,html.mz-day-mode .mz-profile-section-card,html.mz-day-mode .mz-profile-stat{background:#fff!important;color:#222!important;border-color:#ddd5e5!important}html.mz-day-mode .mz-profile-hero-sub,html.mz-day-mode .mz-profile-section-title small,html.mz-day-mode .mz-profile-hint,html.mz-day-mode .mz-profile-footer-note{color:#666!important}html.mz-day-mode .mz-profile-input,html.mz-day-mode .mz-admin-title-select,html.mz-day-mode .mz-profile-current-bg{background:#f8f6fa!important;color:#222!important;border-color:#d8d0df!important}
+@media(max-width:760px){.mz-profile-section-grid{grid-template-columns:1fr;margin:12px 10px 0}.mz-profile-hero{margin:12px 10px 0;border-radius:20px;flex-wrap:wrap}.mz-profile-hero-avatar{width:78px;height:78px;min-width:78px}.mz-profile-hero-name{font-size:23px}.mz-profile-points-card{margin-right:auto}.mz-profile-stats-hero{margin:12px 10px 0!important;gap:8px!important}.mz-profile-stats-hero .mz-profile-stat{padding:12px 6px}.mz-profile-section-card{padding:15px!important}.mz-profile-topbar{height:58px}.mz-profile-top-title{font-size:16px}.mz-profile-back{padding:8px 11px}}
+@media(max-width:430px){.mz-profile-hero{gap:12px;padding:18px 14px}.mz-profile-hero-info{flex-basis:calc(100% - 92px)}.mz-profile-points-card{width:100%;display:flex;align-items:center;justify-content:center;gap:7px}.mz-profile-points-card b{display:inline;font-size:21px}.mz-profile-points-card small{font-size:11px}.mz-profile-avatar-edit{align-items:flex-start}.mz-profile-avatar-actions{flex-direction:column}.mz-profile-primary-action,.mz-profile-secondary-action{width:100%;}.mz-profile-select-grid{grid-template-columns:1fr;}}
+
+/* Day mode */
+html.mz-day-mode,html.mz-day-mode body{background:#f4f1f7!important;color:#222!important;}
+html.mz-day-mode body{color:#222!important;}
+html.mz-day-mode .header,html.mz-day-mode .normal-nav,html.mz-day-mode .search-box,html.mz-day-mode .section-title,html.mz-day-mode .online,html.mz-day-mode .manga-card,html.mz-day-mode .manga-page,html.mz-day-mode .manga-page-header,html.mz-day-mode .manga-detail,html.mz-day-mode .comments-box,html.mz-day-mode .chapter-item,html.mz-day-mode .admin-page,html.mz-day-mode .admin-card,html.mz-day-mode .add-box,html.mz-day-mode .admin-content,html.mz-day-mode .stat,html.mz-day-mode .mz-profile-card,html.mz-day-mode .mz-profile-block,html.mz-day-mode .mz-history-page,html.mz-day-mode .mz-support-card{background:#fff!important;color:#222!important;border-color:#ddd5e5!important;}
+html.mz-day-mode .brand-name,html.mz-day-mode .section-title,html.mz-day-mode .manga-card h3,html.mz-day-mode .manga-detail-info,html.mz-day-mode .admin-section-title,html.mz-day-mode .stat-name,html.mz-day-mode .stat-number,html.mz-day-mode .mz-profile-head h2,html.mz-day-mode .mz-profile-block label{color:#222!important;}
+html.mz-day-mode .search-box input,html.mz-day-mode .comment-form input,html.mz-day-mode .mz-profile-input,html.mz-day-mode .mz-support-input{background:#f8f6fa!important;color:#222!important;border-color:#d8d0df!important;}
+html.mz-day-mode .manga-card p,html.mz-day-mode .detail-description,html.mz-day-mode .detail-author,html.mz-day-mode .chapter-meta,html.mz-day-mode .comment-text,html.mz-day-mode .mz-profile-head p,html.mz-day-mode .mz-profile-hint{color:#666!important;}
+html.mz-day-mode .manga-page-header,html.mz-day-mode .header{box-shadow:0 2px 12px rgba(0,0,0,.08)!important;}
+html.mz-day-mode .mz-sidebar{background:#fff!important;color:#222!important;border-color:#ddd5e5!important;}
+html.mz-day-mode .mz-side-user,html.mz-day-mode .mz-side-btn{background:#f7f4f9!important;color:#222!important;border-color:#ddd5e5!important;}
+
+/* ===== MangaZERO entrance animation ===== */
+#mzIntro{position:fixed;inset:0;z-index:999999;background:radial-gradient(circle at 50% 42%,#241735 0%,#110d18 42%,#08070b 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;opacity:1;visibility:visible;transition:opacity .65s ease,visibility .65s ease}
+#mzIntro.mz-intro-hide{opacity:0;visibility:hidden;pointer-events:none}
+.mz-intro-glow{position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(166,87,229,.22);filter:blur(55px);animation:mzIntroPulse 1.8s ease-in-out infinite}
+.mz-intro-content{position:relative;text-align:center;direction:ltr;transform:translateY(18px) scale(.92);opacity:0;animation:mzIntroIn .9s cubic-bezier(.2,.8,.2,1) .08s forwards}
+.mz-intro-logo{font-size:clamp(42px,11vw,78px);font-weight:1000;letter-spacing:-2px;color:#fff;text-shadow:0 0 28px rgba(166,87,229,.55);line-height:1}
+.mz-intro-logo span{color:#a657e5}
+.mz-intro-sub{margin-top:12px;color:#a9a0b3;font-size:13px;letter-spacing:4px;opacity:0;animation:mzIntroSub .7s ease .65s forwards}
+.mz-intro-line{width:0;height:3px;margin:22px auto 0;border-radius:99px;background:linear-gradient(90deg,transparent,#a657e5,#e28cff,transparent);box-shadow:0 0 14px rgba(166,87,229,.7);animation:mzIntroLine 1s ease .55s forwards}
+.mz-intro-dots{display:flex;justify-content:center;gap:7px;margin-top:22px;opacity:0;animation:mzIntroSub .5s ease .8s forwards}
+.mz-intro-dots i{width:6px;height:6px;border-radius:50%;background:#a657e5;animation:mzIntroDot .8s ease-in-out infinite}
+.mz-intro-dots i:nth-child(2){animation-delay:.12s}.mz-intro-dots i:nth-child(3){animation-delay:.24s}
+.mz-intro-particle{position:absolute;width:4px;height:4px;border-radius:50%;background:#c98cff;box-shadow:0 0 10px #a657e5;opacity:0;animation:mzIntroFloat 2.2s ease-in-out infinite}
+.mz-intro-p1{top:22%;left:18%}.mz-intro-p2{top:32%;right:19%;animation-delay:.35s}.mz-intro-p3{bottom:23%;left:25%;animation-delay:.7s}.mz-intro-p4{bottom:29%;right:26%;animation-delay:1s}
+@keyframes mzIntroIn{to{transform:translateY(0) scale(1);opacity:1}}
+@keyframes mzIntroSub{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mzIntroLine{to{width:min(240px,55vw)}}
+@keyframes mzIntroPulse{0%,100%{transform:scale(.85);opacity:.55}50%{transform:scale(1.12);opacity:.9}}
+@keyframes mzIntroDot{0%,100%{transform:translateY(0);opacity:.35}50%{transform:translateY(-5px);opacity:1}}
+@keyframes mzIntroFloat{0%{transform:translateY(20px) scale(.4);opacity:0}35%{opacity:.9}100%{transform:translateY(-45px) scale(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){#mzIntro,.mz-intro-content,.mz-intro-glow,.mz-intro-sub,.mz-intro-line,.mz-intro-dots,.mz-intro-particle{animation:none!important;transition:none!important}.mz-intro-content{opacity:1;transform:none}.mz-intro-sub,.mz-intro-dots{opacity:1}.mz-intro-line{width:min(240px,55vw)}}
+
+/* ===== MangaZERO UI Motion Pack ===== */
+:root{--mz-motion:260ms;--mz-ease:cubic-bezier(.22,.8,.2,1);}
+@keyframes mzFadeSlideUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mzPageIn{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes mzCardIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes mzCommentIn{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:translateX(0)}}
+@keyframes mzSpin{to{transform:rotate(360deg)}}
+@keyframes mzShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.manga-grid .manga-card{animation:mzCardIn .5s var(--mz-ease) both;transition:transform var(--mz-motion) var(--mz-ease),box-shadow var(--mz-motion) var(--mz-ease),border-color var(--mz-motion) var(--mz-ease)}
+.manga-grid .manga-card:nth-child(2n){animation-delay:.045s}.manga-grid .manga-card:nth-child(3n){animation-delay:.09s}.manga-grid .manga-card:nth-child(4n){animation-delay:.135s}
+.manga-card:hover{transform:translateY(-5px) scale(1.012);box-shadow:0 16px 34px rgba(0,0,0,.28);border-color:#65427d}
+.manga-card:active{transform:translateY(-1px) scale(.985)}
+.manga-card .manga-cover img{transition:transform .45s var(--mz-ease),filter .45s ease}.manga-card:hover .manga-cover img{transform:scale(1.045);filter:saturate(1.08)}
+button,.mz-side-btn,.chapter-item,.manga-page-action,.manga-quick-btn,.pick-star{transition:transform 180ms var(--mz-ease),box-shadow 180ms ease,background 180ms ease,border-color 180ms ease,color 180ms ease}
+button:hover{transform:translateY(-1px)}button:active{transform:scale(.96)}
+#mangaPage{animation:mzPageIn .42s var(--mz-ease) both}
+#mangaDetailBox{animation:mzFadeSlideUp .5s var(--mz-ease) both}
+#mangaPage .manga-hero{animation:mzFadeSlideUp .5s var(--mz-ease) both}
+#mangaPage .manga-quick-actions,.manga-stats{animation:mzFadeSlideUp .52s .06s var(--mz-ease) both}
+#mangaPage .manga-page-action{position:relative;overflow:hidden}.manga-page-action:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transform:translateX(120%);transition:transform .45s ease}.manga-page-action:hover:after{transform:translateX(-120%)}
+.mz-sidebar{transition:transform .32s var(--mz-ease),box-shadow .32s ease!important;will-change:transform}
+.mz-side-overlay{transition:opacity .28s ease!important;opacity:0!important}.mz-side-overlay.show{opacity:1!important}
+.mz-side-user{animation:mzFadeSlideUp .45s var(--mz-ease) both}.mz-side-btn{animation:mzFadeSlideUp .4s var(--mz-ease) both}.mz-side-btn:nth-of-type(2){animation-delay:.04s}.mz-side-btn:nth-of-type(3){animation-delay:.08s}.mz-side-btn:nth-of-type(4){animation-delay:.12s}.mz-side-btn:nth-of-type(5){animation-delay:.16s}
+.mz-account-page{opacity:0;transform:scale(.985);transition:opacity .3s ease,transform .35s var(--mz-ease)}.mz-account-page.mz-motion-open{opacity:1;transform:scale(1)}.mz-account-card{animation:mzFadeSlideUp .45s var(--mz-ease) both}
+.mz-profile-page{opacity:0;transform:scale(.985);transition:opacity .3s ease,transform .35s var(--mz-ease)}.mz-profile-page.mz-motion-open{opacity:1;transform:scale(1)}.mz-profile-card{animation:mzFadeSlideUp .45s var(--mz-ease) both}
+.comment-item{animation:mzCommentIn .38s var(--mz-ease) both;transition:transform 180ms ease,border-color 180ms ease}.comment-item:hover{transform:translateX(-3px);border-color:#493653}.comment-item:nth-child(2){animation-delay:.04s}.comment-item:nth-child(3){animation-delay:.08s}.comment-item:nth-child(4){animation-delay:.12s}.comment-item:nth-child(5){animation-delay:.16s}
+.manga-stars .rating-star{display:inline-block;transition:transform .18s var(--mz-ease),color .18s ease,text-shadow .18s ease}.manga-stars:hover .rating-star{transform:translateY(-2px)}.manga-stars .rating-star:hover{transform:scale(1.3) rotate(-6deg);text-shadow:0 0 12px rgba(255,211,92,.35)}.manga-rate-picker .pick-star:hover{transform:scale(1.18) translateY(-2px)}.manga-rate-picker .pick-star.selected{animation:mzStarPop .3s var(--mz-ease)}
+@keyframes mzStarPop{0%{transform:scale(.8)}60%{transform:scale(1.25)}100%{transform:scale(1)}}
+#mangaPage.mz-loading:before{content:"";position:absolute;z-index:20;top:50%;left:50%;width:42px;height:42px;margin:-21px;border:3px solid rgba(255,255,255,.12);border-top-color:#a657e5;border-radius:50%;animation:mzSpin .8s linear infinite;pointer-events:none}#mangaPage.mz-loading:after{content:"جاري تحميل المانجا...";position:absolute;z-index:19;top:calc(50% + 38px);left:50%;transform:translateX(-50%);padding:8px 14px;border-radius:999px;background:rgba(15,12,21,.92);border:1px solid #352844;color:#cfc5d8;font-size:12px;white-space:nowrap;pointer-events:none}
+.manga-page-inner{animation:mzPageIn .35s ease both}.chapter-item{transition:transform .2s var(--mz-ease),border-color .2s ease,background .2s ease}.chapter-item:hover{transform:translateX(-3px)}
+.manga-section-card,.comments-box{animation:mzFadeSlideUp .42s var(--mz-ease) both}
+@media(max-width:600px){.manga-grid .manga-card:hover{transform:translateY(-2px) scale(1.005);box-shadow:0 10px 22px rgba(0,0,0,.22)}button:hover{transform:none}.manga-card .manga-cover img{transition:transform .35s ease}.mz-side-btn:active,.manga-quick-btn:active,.manga-page-action:active{transform:scale(.97)}#mangaPage.mz-loading:after{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* ===== Stability fixes ===== */
+#mzAccountPage,#mzAccountPage *{animation:none!important;transition:none!important;}
+#mzAccountPage{opacity:1!important;transform:none!important;pointer-events:auto!important;}
+#mzAccountPage .mz-account-card{animation:none!important;transform:none!important;}
+#mangaPage .manga-page-actions{display:grid!important;visibility:visible!important;opacity:1!important;}
+#mangaPage .manga-quick-actions{display:grid!important;visibility:visible!important;opacity:1!important;}
+#mangaPage .manga-comment-quick{display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;position:relative!important;z-index:20!important;touch-action:manipulation!important;cursor:pointer!important;}
+/* ===== Comment controls visibility fix ===== */
+#mangaPageActions{display:grid!important;visibility:visible!important;opacity:1!important;}
+#showCommentsBtn,#showChaptersBtn{display:block!important;visibility:visible!important;opacity:1!important;}
+#mangaCommentQuick{display:block!important;visibility:visible!important;opacity:1!important;}
+#mangaCommentsView{width:100%;min-height:40px;visibility:visible!important;opacity:1!important;}
+#mangaCommentsView .comments-box{display:block!important;visibility:visible!important;opacity:1!important;}
+#mangaCommentsView .comment-form{display:flex!important;visibility:visible!important;opacity:1!important;width:100%!important;position:relative!important;z-index:5!important;gap:8px!important;margin:0 0 15px!important;}
+#mangaCommentsView .comment-form input#commentInput{display:block!important;visibility:visible!important;opacity:1!important;flex:1 1 auto!important;width:auto!important;min-height:48px!important;height:48px!important;box-sizing:border-box!important;color:#fff!important;background:#0f0d15!important;border:1px solid #744a92!important;font-size:15px!important;text-align:right!important;}
+#mangaCommentsView .comment-form input#commentInput::placeholder{color:#cfc5d8!important;opacity:1!important;}
+#mangaCommentsView .comment-form button#addCommentBtn{display:block!important;visibility:visible!important;opacity:1!important;min-width:125px!important;min-height:48px!important;height:48px!important;}
+html.mz-day-mode #mangaCommentsView .comment-form input#commentInput{color:#222!important;background:#f8f6fa!important;border-color:#744a92!important;}
+html.mz-day-mode #mangaCommentsView .comment-form input#commentInput::placeholder{color:#666!important;}
+
+/* ===== block 2 of 18 | original line 1408 | <style > ===== */
+/* ===== MangaZERO Account / Sidebar ===== */
+.menu-toggle{position:fixed;left:14px;top:14px;z-index:10001;width:44px;height:44px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:#17131d;color:#fff;font-size:25px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+.menu-toggle span{display:block;line-height:1}
+.mz-sidebar{position:fixed;left:-310px;top:0;bottom:0;width:285px;z-index:10000;background:linear-gradient(180deg,#15111d,#0e0c13);border-right:1px solid rgba(255,255,255,.09);padding:78px 18px 20px;transition:left .25s ease;box-shadow:12px 0 35px rgba(0,0,0,.35)}
+.mz-sidebar.open{left:0}
+.mz-side-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:none}
+.mz-side-overlay.show{display:block}
+.mz-side-title{font-size:22px;font-weight:800;margin-bottom:18px}.mz-side-btn{width:100%;padding:14px 15px;margin:7px 0;border:1px solid rgba(255,255,255,.08);border-radius:13px;background:#1a1522;color:#fff;text-align:right;font-size:15px;cursor:pointer}.mz-side-btn:hover{background:#241c30}.mz-side-user{padding:15px;border-radius:15px;background:linear-gradient(135deg,#21182b,#17121e);margin-bottom:14px;color:#ddd}.mz-side-user strong{display:block;color:#fff;margin-bottom:5px}.mz-side-close{position:absolute;right:14px;top:14px;border:0;background:transparent;color:#aaa;font-size:24px;cursor:pointer}
+.mz-account-page{position:fixed;inset:0;z-index:9000;background:radial-gradient(circle at top,#2b1939 0,#120e18 48%,#0b0910 100%);display:none;overflow:auto;padding:90px 18px 35px}.mz-account-card{width:min(440px,100%);margin:0 auto;background:rgba(23,18,31,.96);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;box-shadow:0 25px 70px rgba(0,0,0,.45)}.mz-account-head{text-align:center;margin-bottom:24px}.mz-account-logo{font-size:48px}.mz-account-head h1{margin:8px 0 5px;color:#fff;font-size:27px}.mz-account-head p{margin:0;color:#9f97a9}.mz-form-group{margin:15px 0}.mz-form-group label{display:block;color:#d9d2df;margin-bottom:7px;font-size:14px}.mz-input-wrap{position:relative}.mz-input{width:100%;box-sizing:border-box;padding:14px 46px 14px 14px;border:1px solid #352d3e;border-radius:13px;background:#0f0c14;color:#fff;outline:none;font-size:15px}.mz-input:focus{border-color:#8b4dcc;box-shadow:0 0 0 3px rgba(139,77,204,.12)}.mz-eye{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:#aaa;font-size:19px;cursor:pointer;padding:8px}.mz-primary{width:100%;padding:14px;border:0;border-radius:13px;background:linear-gradient(135deg,#7b3fc0,#a657e5);color:#fff;font-size:16px;font-weight:800;cursor:pointer;margin-top:8px}.mz-secondary{width:100%;padding:13px;border:1px solid #3a3044;border-radius:13px;background:#18131f;color:#ddd;font-size:15px;font-weight:700;cursor:pointer;margin-top:10px}.mz-back{position:absolute;top:18px;right:18px;border:1px solid rgba(255,255,255,.1);background:#17131d;color:#fff;border-radius:12px;padding:10px 14px;cursor:pointer}.mz-msg{min-height:22px;margin-top:10px;text-align:center;font-size:13px}.mz-strength{height:7px;background:#29222f;border-radius:99px;overflow:hidden;margin-top:8px}.mz-strength-fill{height:100%;width:0;transition:width .2s ease;background:#777}.mz-strength-text{font-size:12px;color:#9f97a9;margin-top:5px}.mz-register-only{display:none}.mz-google-btn{width:100%;padding:13px 16px;border:1px solid #3a3044;border-radius:13px;background:#fff;color:#222;font-size:15px;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:transform .15s ease,box-shadow .15s ease}.mz-google-btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(0,0,0,.2)}.mz-google-btn:disabled{opacity:.65;cursor:wait;transform:none}.mz-google-icon{width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#fff;border:1px solid #ddd;font-family:Arial,sans-serif;font-weight:900;color:#4285f4}.mz-user-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover;display:block;margin-bottom:10px;border:2px solid rgba(255,255,255,.14)}.mz-user-avatar-fallback{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#7b3fc0;color:#fff;font-size:20px;margin-bottom:10px}.mz-user-badge{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 12px;border-radius:99px;background:#251b30;color:#ddd;font-size:13px}
+@media(max-width:600px){.mz-account-card{padding:22px 18px;border-radius:20px}.menu-toggle{top:10px;left:10px}.header{padding-left:68px}}
+
+/* ===== READING HISTORY ===== */
+.mz-history-page{display:none;position:fixed;inset:0;z-index:10002;background:linear-gradient(180deg,#0e0b14,#17111f);overflow:auto;padding:24px 18px 40px}
+.mz-history-head{max-width:900px;margin:0 auto 22px;display:flex;align-items:center;gap:12px}
+.mz-history-head h2{margin:0;color:#fff;font-size:24px}
+.mz-history-back{border:0;background:#292031;color:#fff;border-radius:12px;padding:10px 14px;font-size:18px;cursor:pointer}
+.mz-history-list{max-width:900px;margin:auto;display:grid;gap:12px}
+.mz-history-item{display:flex;align-items:center;gap:14px;padding:14px;background:#211a2b;border:1px solid rgba(255,255,255,.08);border-radius:16px;color:#fff;cursor:pointer}
+.mz-history-cover{width:58px;height:76px;border-radius:10px;background:#33263f;display:flex;align-items:center;justify-content:center;font-size:28px;flex:none}
+.mz-history-info{min-width:0;flex:1}.mz-history-info strong{display:block;font-size:17px;margin-bottom:5px}.mz-history-info span{display:block;color:#aaa;font-size:13px}
+.mz-history-empty{text-align:center;color:#aaa;padding:50px 20px}
+ .mz-side-btn.history-btn{margin-top:8px}
+.mz-terms-page{display:none;position:fixed;inset:0;z-index:12000;background:rgba(7,5,10,.78);backdrop-filter:blur(7px);overflow:auto;padding:34px 16px}
+.mz-terms-card{width:min(700px,100%);margin:30px auto;background:#17121f;border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:24px;box-shadow:0 25px 80px rgba(0,0,0,.55);color:#eee}
+.mz-terms-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.mz-terms-head h2{margin:0;color:#fff;font-size:24px}.mz-terms-close{border:1px solid rgba(255,255,255,.1);background:#241c30;color:#fff;border-radius:11px;padding:8px 12px;cursor:pointer}
+.mz-terms-body{line-height:1.9;color:#cfc7d7;font-size:14px}.mz-terms-body h3{color:#fff;font-size:16px;margin:18px 0 7px}.mz-terms-body p{margin:7px 0}.mz-terms-body ul{margin:7px 0;padding-right:22px}.mz-terms-consent{margin-top:20px;padding:14px;border-radius:15px;background:#21182b;border:1px solid rgba(255,255,255,.08);color:#eee}.mz-terms-check{display:flex;align-items:flex-start;gap:10px;cursor:pointer;line-height:1.7}.mz-terms-check input{width:18px;height:18px;accent-color:#9b5de5;margin-top:4px;flex:none}.mz-terms-actions{display:flex;gap:9px;margin-top:14px}.mz-terms-accept{flex:1;border:0;border-radius:13px;padding:13px;background:linear-gradient(135deg,#7b3fc0,#a657e5);color:#fff;font-weight:800;cursor:pointer}.mz-terms-accept:disabled{opacity:.45;cursor:not-allowed}.mz-terms-cancel{border:1px solid #3a3044;border-radius:13px;padding:13px 16px;background:#18131f;color:#ddd;font-weight:700;cursor:pointer}
+html.mz-day-mode .mz-terms-card{background:#fff;color:#222;border-color:#ddd5e5}html.mz-day-mode .mz-terms-head h2,html.mz-day-mode .mz-terms-body h3{color:#222}html.mz-day-mode .mz-terms-body{color:#555}html.mz-day-mode .mz-terms-consent{background:#f7f4f9;color:#222;border-color:#ddd5e5}
+.mz-support-page{position:fixed;inset:0;z-index:9100;background:radial-gradient(circle at top,#2b1939 0,#120e18 48%,#0b0910 100%);display:none;overflow:auto;padding:82px 14px 24px}.mz-support-card{width:min(680px,100%);margin:0 auto;background:rgba(23,18,31,.97);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:18px;box-shadow:0 25px 70px rgba(0,0,0,.45)}.mz-support-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.mz-support-head h2{margin:0;color:#fff;font-size:22px}.mz-support-note{color:#aaa0b2;font-size:13px;line-height:1.6;margin-bottom:14px}.mz-support-messages{min-height:300px;max-height:52vh;overflow:auto;padding:6px}.mz-support-msg{display:flex;margin:8px 0}.mz-support-msg.mine{justify-content:flex-end}.mz-support-bubble{max-width:78%;padding:10px 13px;border-radius:15px;background:#241c30;color:#eee;line-height:1.55;word-break:break-word}.mz-support-msg.mine .mz-support-bubble{background:#744a92}.mz-support-meta{font-size:10px;opacity:.65;margin-top:4px}.mz-support-form{display:flex;gap:8px;margin-top:12px}.mz-support-input{flex:1;min-width:0;padding:13px;border:1px solid #352d3e;border-radius:13px;background:#0f0c14;color:#fff;outline:none}.mz-support-send{border:0;border-radius:13px;padding:0 18px;background:#7b3fc0;color:#fff;font-weight:800;cursor:pointer}.mz-support-close{border:1px solid rgba(255,255,255,.1);background:#17131d;color:#fff;border-radius:11px;padding:8px 12px;cursor:pointer}.admin-support-layout{display:grid;grid-template-columns:260px 1fr;gap:14px}.admin-support-users,.admin-support-chat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px}.admin-support-user{width:100%;text-align:right;border:1px solid rgba(255,255,255,.08);background:#17131e;color:#fff;border-radius:11px;padding:10px;margin-bottom:7px;cursor:pointer}.admin-support-user.active{background:#2a1d35;border-color:#744a92}.admin-support-user small{display:block;opacity:.65;margin-top:4px}.admin-support-chat .mz-support-messages{max-height:45vh;min-height:280px}.admin-support-empty{padding:25px 8px;text-align:center;opacity:.7}.admin-support-selected{font-weight:800;margin-bottom:8px}.admin-support-unread{display:inline-block;margin-right:5px;background:#ff5577;color:#fff;border-radius:999px;padding:2px 6px;font-size:10px}@media(max-width:700px){.admin-support-layout{grid-template-columns:1fr}.admin-support-users{max-height:190px;overflow:auto}.mz-support-form{flex-direction:column}.mz-support-send{padding:12px}.mz-support-bubble{max-width:88%}}
+
+/* ===== block 3 of 18 | original line 1439 | <style > ===== */
+ .admin-users-list{display:flex;flex-direction:column;gap:12px}
+.admin-user-search-wrap{margin:0 0 16px;padding:14px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(255,255,255,.035)}
+.admin-user-search-title{font-weight:900;color:#fff;margin-bottom:9px;font-size:14px}
+.admin-user-search-row{display:flex;gap:8px;align-items:stretch}
+.admin-user-search{flex:1;min-width:0;height:46px;padding:0 14px;border:1px solid #5d3a75;border-radius:12px;background:#0f0c14;color:#fff;outline:none;font-size:15px;direction:ltr;text-align:left;box-sizing:border-box}
+.admin-user-search:focus{border-color:#a76de0;box-shadow:0 0 0 3px rgba(167,109,224,.12)}
+.admin-user-search::placeholder{color:#8f8798}
+.admin-user-search-clear{height:46px;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:0 14px;background:#211a29;color:#fff;font-weight:800;cursor:pointer}
+.admin-user-search-clear:active{transform:scale(.97)}
+.admin-user-search-hint{margin-top:8px;color:#9e95a7;font-size:12px;line-height:1.5}
+@media(max-width:600px){.admin-user-search-row{gap:6px}.admin-user-search-clear{padding:0 11px}}
+.admin-ban-panel{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:14px;margin-bottom:16px}.admin-ban-panel-title{font-weight:900;margin-bottom:8px}.admin-ban-panel-note{font-size:13px;opacity:.72;line-height:1.7}.admin-ban-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.admin-ban-select{background:#0f0d15;color:#fff;border:1px solid #3a3145;border-radius:9px;padding:9px 10px}.ban-restricted-badge{display:inline-block;margin-top:7px;padding:4px 8px;border-radius:999px;background:#f0a23a;color:#1d1204;font-size:12px;font-weight:800}.ban-full-badge{display:inline-block;margin-top:7px;padding:4px 8px;border-radius:999px;background:#ff5577;color:#fff;font-size:12px;font-weight:800}
+html.mz-day-mode .admin-ban-select{background:#f8f6fa;color:#222;border-color:#d8d0df}.mz-restricted-action{opacity:.48!important;pointer-events:none!important}
+
+/* Helper user picker */
+.mz-helper-picker{position:relative;width:100%;margin-bottom:10px;z-index:40}
+.mz-helper-picker-btn{width:100%;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:right;cursor:pointer;box-sizing:border-box;background:#0f0d15!important;color:#fff!important;border:1px solid #3a3145!important;border-radius:12px;padding:0 14px!important;font:inherit;font-weight:800!important}
+.mz-helper-picker-btn:active{transform:scale(.995)}
+.mz-helper-picker-arrow{font-size:20px;opacity:.8;transition:transform .18s ease}
+.mz-helper-picker.open .mz-helper-picker-arrow{transform:rotate(180deg)}
+.mz-helper-picker-panel{position:absolute;top:calc(100% + 7px);left:0;right:0;background:#17131d;border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:10px;box-shadow:0 18px 50px rgba(0,0,0,.55);z-index:1000}
+.mz-helper-search-wrap{display:flex;align-items:center;gap:8px;background:#0d0b11;border:1px solid #3a3145;border-radius:10px;padding:0 10px;margin-bottom:8px}
+.mz-helper-search-wrap input{width:100%;height:42px;border:0;outline:0;background:transparent;color:#fff;font:inherit}
+.mz-helper-user-list{max-height:260px;overflow:auto;display:flex;flex-direction:column;gap:5px}
+.mz-helper-user-option{width:100%;border:1px solid transparent;background:rgba(255,255,255,.035);color:#fff;border-radius:10px;padding:9px 10px;text-align:right;cursor:pointer;display:flex;align-items:center;gap:10px;box-sizing:border-box}
+.mz-helper-user-option:hover,.mz-helper-user-option:active{background:rgba(137,76,184,.2);border-color:rgba(170,100,220,.45)}
+.mz-helper-user-avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;flex:0 0 34px;background:#27212d;display:flex;align-items:center;justify-content:center}
+.mz-helper-user-info{min-width:0;flex:1}
+.mz-helper-user-name{display:block;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mz-helper-user-email{display:block;font-size:11px;opacity:.68;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:ltr;text-align:right}
+html.mz-day-mode .mz-helper-picker-btn{background:#fff!important;color:#222!important;border-color:#d8d0df!important}
+html.mz-day-mode .mz-helper-picker-panel{background:#fff;color:#222;border-color:#d8d0df}
+html.mz-day-mode .mz-helper-search-wrap{background:#f7f4f9;border-color:#d8d0df}
+html.mz-day-mode .mz-helper-search-wrap input,html.mz-day-mode .mz-helper-user-option{color:#222}
+
+/* ===== PROFILE PREMIUM + AVATARS ===== */
+.mz-profile-avatar-wrap{display:flex;align-items:center;gap:14px;margin-top:14px;padding:14px;background:linear-gradient(135deg,rgba(116,74,146,.16),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.10);border-radius:18px}
+.mz-profile-avatar,.mz-comment-avatar,.chapter-comment-avatar,.mz-public-profile-avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;background:#241d2b;border:2px solid #744a92;box-shadow:0 0 0 4px rgba(116,74,146,.12),0 8px 24px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 64px}
+.mz-comment-avatar,.chapter-comment-avatar{width:38px;height:38px;flex-basis:38px;border-width:1px;box-shadow:none}
+.mz-profile-avatar-fallback,.mz-comment-avatar-fallback,.chapter-comment-avatar-fallback{font-size:24px;display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+.mz-profile-avatar-info{flex:1;min-width:0}.mz-profile-avatar-info strong{display:block;font-size:15px}.mz-profile-avatar-info span{display:block;color:#aaa1b3;font-size:12px;line-height:1.6;margin-top:4px}
+.mz-profile-upload{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;border:1px solid #744a92;border-radius:10px;padding:9px 12px;background:#241832;color:#fff;font-weight:800;cursor:pointer}
+.mz-profile-upload input{display:none}
+.mz-profile-avatar-remove{border:0;background:transparent;color:#ff9aaa;cursor:pointer;font-weight:800;margin-inline-start:6px}
+.mz-admin-title-box{display:none}.mz-admin-title-box.show{display:block}.mz-admin-title-select{width:100%;box-sizing:border-box;background:#0b0910;border:1px solid #3a3046;color:#fff;border-radius:12px;padding:13px;outline:none;font-size:15px}.mz-admin-title-note{color:#8f8899;font-size:12px;line-height:1.7;margin-top:8px}
+.comment-user,.chapter-comment-user{display:flex;align-items:center;gap:9px}
+.comment-user-main,.chapter-comment-user-main{min-width:0;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.mz-public-profile-avatar{width:82px;height:82px;flex-basis:82px;border-width:2px}
+.mz-profile-card{background:radial-gradient(circle at top right,rgba(116,74,146,.22),transparent 35%),#15131c}
+.mz-profile-head{align-items:center}
+.mz-profile-icon{display:none}
+html.mz-day-mode .mz-profile-avatar-wrap{background:#f7f3fa;border-color:#ddd5e5}
+html.mz-day-mode .mz-profile-avatar-info span{color:#777}
+
+/* Report reason modal */
+.mz-report-overlay{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.68);backdrop-filter:blur(6px)}
+.mz-report-modal{width:min(440px,100%);background:#17131d;border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:20px;box-shadow:0 22px 70px rgba(0,0,0,.55);direction:rtl;text-align:right;animation:mzReportIn .18s ease-out}
+@keyframes mzReportIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+.mz-report-title{font-size:18px;font-weight:900;color:#fff;margin-bottom:6px}.mz-report-subtitle{font-size:13px;color:#aaa;line-height:1.7;margin-bottom:14px}.mz-report-textarea{width:100%;min-height:125px;resize:vertical;box-sizing:border-box;background:#0e0b12;color:#fff;border:1px solid #3a3044;border-radius:13px;padding:12px;font:inherit;outline:none}.mz-report-textarea:focus{border-color:#ff6680;box-shadow:0 0 0 3px rgba(255,102,128,.12)}.mz-report-actions{display:flex;gap:8px;margin-top:12px}.mz-report-actions button{flex:1;border:0;border-radius:11px;padding:11px 12px;font-weight:900;cursor:pointer}.mz-report-cancel{background:#302b35;color:#ddd}.mz-report-send{background:linear-gradient(135deg,#ff5577,#e83d64);color:#fff}.mz-report-send:disabled{opacity:.55;cursor:not-allowed}.mz-report-success{position:fixed;right:18px;bottom:18px;z-index:100000;background:#173a28;color:#d9ffe8;border:1px solid rgba(76,220,137,.35);padding:13px 17px;border-radius:13px;font-weight:900;box-shadow:0 12px 35px rgba(0,0,0,.35);animation:mzReportIn .2s ease-out}
+.admin-user-card,.admin-report-card,.admin-helper-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:14px}
+.admin-user-top{display:flex;align-items:center;gap:10px}.admin-user-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#222}.admin-user-info{flex:1;min-width:0}.admin-user-info strong{display:block}.admin-user-info span{display:block;font-size:12px;opacity:.72;overflow:hidden;text-overflow:ellipsis}.admin-user-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.mz-title-badge{display:inline-flex;align-items:center;gap:5px;margin-top:6px;margin-inline-start:4px;padding:4px 9px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.2px}.mz-title-admin{position:relative;background:linear-gradient(135deg,#fff1a8 0%,#ffd54a 22%,#ff9f1a 48%,#ffe27a 70%,#fff8cf 100%);background-size:200% 200%;color:#241400;border:1px solid rgba(255,236,150,.95);text-shadow:0 1px 0 rgba(255,255,255,.55),0 2px 5px rgba(80,35,0,.35);box-shadow:0 0 8px rgba(255,215,64,.9),0 0 20px rgba(255,170,0,.65),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 5px rgba(142,74,0,.22);animation:mzAdminShine 2.2s ease-in-out infinite;font-weight:1000;padding:5px 11px;border-radius:999px}.mz-title-mod{background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);background-size:300% 100%;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.65);box-shadow:0 0 14px rgba(255,80,80,.4);animation:mzRainbow 3.2s linear infinite}.mz-title-support{background:linear-gradient(90deg,#ff1744,#ff9800,#ffeb3b,#00e676,#00bcd4,#651fff,#ff1744);background-size:300% 100%;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.65);box-shadow:0 0 12px rgba(0,188,212,.35);animation:mzRainbow 3.8s linear infinite}.mz-title-name-admin{background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 2.2s linear infinite;font-weight:1000}.mz-title-name-mod{background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 3.2s linear infinite;font-weight:1000}.mz-title-name-support{background:linear-gradient(90deg,#ff1744,#ff9800,#ffeb3b,#00e676,#00bcd4,#651fff,#ff1744);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 3.8s linear infinite;font-weight:900}@keyframes mzRainbow{0%{background-position:0% 50%}100%{background-position:300% 50%}}@keyframes mzAdminShine{0%,100%{background-position:0% 50%;transform:translateY(0)}50%{background-position:100% 50%;transform:translateY(-1px)}}.mz-title-member{background:#2a2432;color:#cfc7d8}
+.mz-title-veteran{position:relative;overflow:hidden;background:linear-gradient(135deg,#071a3d 0%,#0b3d91 25%,#2196ff 50%,#0b3d91 75%,#071a3d 100%);background-size:300% 300%;color:#eaf6ff;border:1px solid rgba(90,190,255,.95);box-shadow:0 0 8px rgba(33,150,243,.8),0 0 20px rgba(30,136,229,.55),inset 0 1px 0 rgba(255,255,255,.45);text-shadow:0 1px 4px rgba(0,0,0,.65);animation:mzVeteranBadge 2.8s ease-in-out infinite;font-weight:1000;padding:5px 11px;border-radius:999px}
+.mz-title-veteran::after{content:"";position:absolute;top:-30%;left:-70%;width:35%;height:160%;transform:rotate(22deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);animation:mzVeteranShine 2.4s linear infinite}
+.mz-title-name-veteran{background:linear-gradient(90deg,#78d7ff,#2196ff,#b9ecff,#1976d2,#78d7ff);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzVeteranName 2.6s linear infinite;font-weight:1000;text-shadow:0 0 8px rgba(33,150,243,.45)}
+@keyframes mzVeteranBadge{0%,100%{background-position:0% 50%;transform:translateY(0)}50%{background-position:100% 50%;transform:translateY(-1px) scale(1.03)}}
+@keyframes mzVeteranShine{0%{left:-70%}100%{left:140%}}
+@keyframes mzVeteranName{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+.mz-title-select{background:#0f0d15;color:#fff;border:1px solid #3a3145;border-radius:9px;padding:8px 10px}.mz-title-name-admin{background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 2.2s linear infinite;font-weight:1000;text-shadow:0 0 8px rgba(255,215,64,.85),0 0 18px rgba(255,145,0,.55)}.mz-title-name-mod{background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 3.2s linear infinite;font-weight:1000}.mz-title-name-support{background:linear-gradient(90deg,#ff1744,#ff9800,#ffeb3b,#00e676,#00bcd4,#651fff,#ff1744);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 3.8s linear infinite;font-weight:900}.mz-title-name-member{font-weight:800;color:#fff}.admin-report-count-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;margin-inline-start:6px;border-radius:999px;background:#ff3d5a;color:#fff;font-size:11px;font-weight:1000;line-height:20px;box-shadow:0 0 12px rgba(255,61,90,.55);animation:mzReportPulse 1.5s ease-in-out infinite}.admin-report-count-badge:empty{display:none}@keyframes mzReportPulse{0%,100%{transform:scale(1);box-shadow:0 0 8px rgba(255,61,90,.35)}50%{transform:scale(1.08);box-shadow:0 0 18px rgba(255,61,90,.7)}}
+.admin-action-btn{border:0;border-radius:9px;padding:8px 10px;cursor:pointer;font-weight:700}.admin-ban-btn{background:#ff5577;color:#fff}.admin-unban-btn{background:#55d98b;color:#07130d}.admin-delete-btn{background:#ff5577;color:#fff}.admin-muted-btn{background:#333;color:#fff}.admin-verify-btn{background:#1877f2;color:#fff}.admin-verify-btn.off{background:#333;color:#ddd}.ban-badge{display:inline-block;margin-top:7px;padding:4px 8px;border-radius:999px;background:#ff5577;color:#fff;font-size:12px}.comment-actions{display:flex;gap:7px;margin-top:8px;flex-wrap:wrap}.comment-report-btn{border:0;background:transparent;color:#ff9aaa;cursor:pointer;font-size:12px}.admin-badge{position:relative;display:inline-flex;align-items:center;gap:4px;font-size:11px;background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);background-size:300% 100%;color:#fff;padding:4px 9px;border-radius:999px;margin-right:5px;font-weight:1000;text-shadow:0 1px 3px rgba(0,0,0,.65);box-shadow:0 0 14px rgba(255,80,80,.45);animation:mzRainbow 3.2s linear infinite;overflow:hidden}.mz-verified-badge{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:50%;background:#1877f2;color:#fff;font-size:11px;font-weight:900;line-height:17px;vertical-align:middle;margin-inline-start:4px;box-shadow:0 0 8px rgba(24,119,242,.35)}.admin-name-wrap{position:relative;display:inline-block;vertical-align:middle;background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mzRainbow 3.2s linear infinite;font-weight:1000}.admin-crown{position:absolute;left:50%;top:-18px;font-size:18px;line-height:1;z-index:5;pointer-events:none;transform:translateX(-50%);filter:drop-shadow(0 0 5px rgba(255,215,0,.95));animation:mzCrownMove 1.8s ease-in-out infinite}@keyframes mzCrownMove{0%,100%{transform:translateX(calc(-50% - 13px)) translateY(0) rotate(-8deg)}50%{transform:translateX(calc(-50% + 13px)) translateY(-4px) rotate(8deg)}}
+
+/* ===== block 4 of 18 | original line 1511 | <style id="mz-admin-premium-fix"> ===== */
+/* ADMIN PREMIUM: أقوى وأوضح من المشرف مع الحفاظ على الـ Rainbow المتحرك */
+.mz-title-admin{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);
+  background-size:300% 100%;
+  color:#fff !important;
+  border:2px solid rgba(255,239,139,.98);
+  padding:6px 13px !important;
+  font-size:12px !important;
+  font-weight:1000 !important;
+  letter-spacing:.45px;
+  text-shadow:0 1px 2px rgba(0,0,0,.8),0 0 8px rgba(255,255,255,.35);
+  box-shadow:0 0 8px rgba(255,215,64,.95),0 0 18px rgba(255,72,220,.7),0 0 30px rgba(80,120,255,.5),inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 7px rgba(70,0,120,.35);
+  animation:mzRainbow 2.4s linear infinite;
+  transform:translateY(-1px);
+}
+.mz-title-admin::after{
+  content:"";
+  position:absolute;
+  top:-40%;
+  left:-35%;
+  width:28%;
+  height:180%;
+  transform:rotate(20deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);
+  filter:blur(1px);
+  animation:mzAdminSweep 2.15s linear infinite;
+  pointer-events:none;
+}
+.mz-title-name-admin{
+  background:linear-gradient(90deg,#ff3b30,#ff9800,#ffd600,#4caf50,#00bcd4,#3f51b5,#9c27b0,#ff3b30);
+  background-size:300% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:mzRainbow 2.4s linear infinite;
+  font-weight:1000 !important;
+  text-shadow:0 0 7px rgba(255,214,64,.9),0 0 16px rgba(255,60,210,.65),0 0 24px rgba(50,180,255,.4);
+}
+.admin-crown{
+  font-size:16px !important;
+  top:-21px !important;
+  right:-4px !important;
+  filter:drop-shadow(0 0 5px rgba(255,215,64,.95)) drop-shadow(0 0 9px rgba(255,100,220,.55));
+  animation:mzCrownPulse 1.4s ease-in-out infinite;
+}
+@keyframes mzAdminPremiumRainbow{
+  0%{background-position:0% 50%}
+  100%{background-position:500% 50%}
+}
+@keyframes mzAdminNameRainbow{
+  0%{background-position:0% 50%}
+  100%{background-position:500% 50%}
+}
+@keyframes mzAdminSweep{
+  0%{left:-35%;opacity:0}
+  12%{opacity:1}
+  55%{left:115%;opacity:1}
+  70%,100%{left:115%;opacity:0}
+}
+@keyframes mzCrownPulse{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-2px) scale(1.12);}
+}
+
+/* ===== block 5 of 18 | original line 1580 | <style id="MZ_ADMIN_CROWN_BIG_V1"> ===== */
+/* تاج كبير بجانب لقب ADMIN */
+.admin-badge{
+  position:relative;
+  overflow:visible !important;
+  margin-inline-start:28px !important;
+}
+.admin-badge::before{
+  content:"👑";
+  position:absolute;
+  right:calc(100% + 7px);
+  top:50%;
+  transform:translateY(-50%);
+  font-size:27px;
+  line-height:1;
+  z-index:20;
+  filter:drop-shadow(0 0 4px rgba(255,215,0,.95)) drop-shadow(0 0 9px rgba(255,165,0,.65));
+  animation:mzBigAdminCrown 1.7s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes mzBigAdminCrown{
+  0%,100%{transform:translateY(-50%) rotate(-8deg) scale(1)}
+  50%{transform:translateY(calc(-50% - 5px)) rotate(8deg) scale(1.12)}
+}
+/* لو اللقب ظاهر من نظام الألقاب العام */
+
+/* ===== block 6 of 18 | original line 1607 | <style id="MZ_ADMIN_BADGE_INSIDE_FIX"> ===== */
+/* تاج ADMIN يظل داخل مستطيل اللقب ولا يخرج خارج كارت التعليق */
+.admin-badge{
+  position:relative !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:4px !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  white-space:nowrap !important;
+  margin-inline-start:5px !important;
+  margin-inline-end:5px !important;
+  vertical-align:middle !important;
+  max-width:100% !important;
+}
+.admin-badge::before{content:none !important;display:none !important;}
+.admin-crown{display:none !important;}
+.admin-badge-crown{
+  position:static !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex:0 0 auto !important;
+  font-size:13px !important;
+  line-height:1 !important;
+  transform:none !important;
+  filter:none !important;
+  animation:none !important;
+}
+@media(max-width:520px){
+  .admin-badge{font-size:10px !important;padding:4px 7px !important;margin-inline-start:3px !important;margin-inline-end:3px !important;}
+  .admin-badge-crown{font-size:12px !important;}
+}
+
+/* ===== block 7 of 18 | original line 1642 | <style id="MZ_CHAPTER_COMMENT_CROWN_PRETTY_FIX"> ===== */
+/* قرب الاسم من صورة المستخدم */
+.chapter-comment-user{gap:3px !important;}
+.chapter-comment-user-main{gap:4px !important;}
+
+/* التاج القديم بشكل أجمل، لكن داخل مستطيل ADMIN تمامًا */
+.admin-badge{
+  position:relative !important;
+  overflow:hidden !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:5px !important;
+  padding:5px 9px 5px 8px !important;
+  margin-inline-start:2px !important;
+  margin-inline-end:2px !important;
+  border:1px solid rgba(255,220,90,.65) !important;
+  background:linear-gradient(100deg,#39206b,#744a92,#b24cff,#744a92,#39206b) !important;
+  background-size:250% 100% !important;
+  box-shadow:0 0 10px rgba(178,76,255,.45),inset 0 0 7px rgba(255,255,255,.12) !important;
+  animation:mzAdminBadgeShine 3s linear infinite !important;
+  white-space:nowrap !important;
+}
+.admin-badge-crown{
+  position:static !important;
+  display:inline-flex !important;
+  font-size:17px !important;
+  line-height:1 !important;
+  flex:0 0 auto !important;
+  transform:translateY(-1px) !important;
+  filter:drop-shadow(0 0 4px rgba(255,215,0,.95)) !important;
+  animation:mzPrettyCrown 1.6s ease-in-out infinite !important;
+}
+.admin-badge .mz-verified-badge{
+  width:16px !important;
+  height:16px !important;
+  line-height:16px !important;
+  margin-inline-start:1px !important;
+}
+@keyframes mzPrettyCrown{
+  0%,100%{transform:translateY(-1px) rotate(-4deg) scale(1)}
+  50%{transform:translateY(-3px) rotate(4deg) scale(1.08)}
+}
+@keyframes mzAdminBadgeShine{
+  0%{background-position:0% 50%}
+  100%{background-position:250% 50%}
+}
+@media(max-width:520px){
+  .chapter-comment-user{gap:2px !important;}
+  .chapter-comment-user-main{gap:3px !important;}
+  .admin-badge{font-size:10px !important;padding:4px 7px 4px 6px !important;gap:4px !important;}
+  .admin-badge-crown{font-size:15px !important;}
+}
+
+/* ===== block 8 of 18 | original line 1697 | <style id="MZ_CHAPTER_COMMENTS_LAYOUT_FINAL_REAL_FIX"> ===== */
+/* تثبيت شكل رأس تعليق الفصل: الصورة والاسم متجاوران فعليًا بدون فراغ */
+.chapter-comment-user{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:5px !important;
+  width:max-content !important;
+  max-width:100% !important;
+  margin-bottom:6px !important;
+}
+.chapter-comment-user-main{
+  display:flex !important;
+  flex:0 0 auto !important;
+  width:auto !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:4px !important;
+  flex-wrap:nowrap !important;
+}
+/* تاج ADMIN القديم لكن داخل المستطيل نفسه */
+.admin-badge{
+  position:relative !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:5px !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  white-space:nowrap !important;
+  margin:0 2px !important;
+  padding:5px 10px !important;
+  border:1px solid rgba(255,220,90,.85) !important;
+  border-radius:999px !important;
+  background:linear-gradient(90deg,#32164f,#744a92,#b84dff,#744a92,#32164f) !important;
+  background-size:250% 100% !important;
+  color:#fff !important;
+  box-shadow:0 0 12px rgba(178,76,255,.55),inset 0 0 8px rgba(255,255,255,.14) !important;
+  animation:mzRealAdminBadgeShine 3s linear infinite !important;
+}
+.admin-badge::before{content:none !important;}
+.admin-badge-crown{
+  position:static !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex:0 0 auto !important;
+  font-size:19px !important;
+  line-height:1 !important;
+  transform:translateY(-1px) !important;
+  filter:drop-shadow(0 0 4px rgba(255,215,0,1)) drop-shadow(0 0 7px rgba(255,165,0,.7)) !important;
+  animation:mzRealAdminCrown 1.5s ease-in-out infinite !important;
+}
+@keyframes mzRealAdminCrown{
+  0%,100%{transform:translateY(-1px) rotate(-5deg) scale(1)}
+  50%{transform:translateY(-3px) rotate(5deg) scale(1.1)}
+}
+@keyframes mzRealAdminBadgeShine{
+  0%{background-position:0% 50%}
+  100%{background-position:250% 50%}
+}
+@media(max-width:520px){
+  .chapter-comment-user{gap:4px !important;}
+  .chapter-comment-user-main{gap:3px !important;}
+  .admin-badge{font-size:10px !important;padding:4px 8px !important;}
+  .admin-badge-crown{font-size:17px !important;}
+}
+
+/* ===== block 9 of 18 | original line 1770 | <style id="MZ_CHAPTER_CROWN_OUTSIDE_FINAL"> ===== */
+/* تاج ADMIN كبير خارج مستطيل اللقب ومتحرك */
+.chapter-comment-user{gap:4px !important;}
+.chapter-comment-user-main{display:flex !important;align-items:center !important;gap:5px !important;}
+.admin-badge{
+  position:relative !important;
+  overflow:visible !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  white-space:nowrap !important;
+  margin:0 4px !important;
+}
+.admin-badge-crown{display:none !important;}
+.admin-badge::before{
+  content:"👑" !important;
+  position:absolute !important;
+  left:50% !important;
+  top:-30px !important;
+  transform:translateX(-50%) rotate(-6deg) !important;
+  display:block !important;
+  font-size:31px !important;
+  line-height:1 !important;
+  z-index:50 !important;
+  pointer-events:none !important;
+  filter:drop-shadow(0 0 4px rgba(255,215,0,1)) drop-shadow(0 0 10px rgba(255,150,0,.75)) !important;
+  animation:mzOutsideAdminCrown 1.6s ease-in-out infinite !important;
+}
+@keyframes mzOutsideAdminCrown{
+  0%,100%{transform:translateX(-50%) translateY(0) rotate(-8deg) scale(1);}
+  50%{transform:translateX(-50%) translateY(-7px) rotate(8deg) scale(1.12);}
+}
+@media(max-width:520px){
+  .admin-badge::before{font-size:28px !important;top:-27px !important;}
+}
+
+/* ===== block 10 of 18 | original line 1806 | <style id="MZ_ADMIN_COLORS_MOVING_FINAL"> ===== */
+.admin-name-wrap{background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744)!important;background-size:500% 100%!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;animation:mzAdminNameColors 2.2s linear infinite!important;}
+.admin-badge{background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744)!important;background-size:500% 100%!important;animation:mzAdminBadgeColors 2.6s linear infinite!important;}
+@keyframes mzAdminNameColors{0%{background-position:0% 50%}100%{background-position:500% 50%}}
+@keyframes mzAdminBadgeColors{0%{background-position:0% 50%}100%{background-position:500% 50%}}
+
+/* ===== block 11 of 18 | original line 1812 | <style id="MZ_ADMIN_COLORS_MOVING_REAL_FIX"> ===== */
+/* ألوان الأدمن تتحرك فعليًا + التاج نفسه تتغير ألوانه */
+.admin-name-wrap{
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:700% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  color:transparent !important;
+  animation:mzAdminNameColorsReal 2s linear infinite !important;
+}
+.admin-badge{
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:700% 100% !important;
+  color:#fff !important;
+  animation:mzAdminBadgeColorsReal 2.2s linear infinite !important;
+}
+.admin-badge::before{
+  animation:mzOutsideAdminCrownReal 1.6s ease-in-out infinite, mzCrownColorsReal 3s linear infinite !important;
+}
+@keyframes mzAdminNameColorsReal{
+  0%{background-position:0% 50%}
+  100%{background-position:700% 50%}
+}
+@keyframes mzAdminBadgeColorsReal{
+  0%{background-position:0% 50%}
+  100%{background-position:700% 50%}
+}
+@keyframes mzOutsideAdminCrownReal{
+  0%,100%{transform:translateX(-50%) translateY(0) rotate(-8deg) scale(1)}
+  50%{transform:translateX(-50%) translateY(-8px) rotate(8deg) scale(1.14)}
+}
+@keyframes mzCrownColorsReal{
+  0%,100%{filter:hue-rotate(0deg) drop-shadow(0 0 5px rgba(255,215,0,1)) drop-shadow(0 0 10px rgba(255,120,0,.75));}
+  25%{filter:hue-rotate(80deg) drop-shadow(0 0 7px rgba(255,0,170,1)) drop-shadow(0 0 12px rgba(150,80,255,.8));}
+  50%{filter:hue-rotate(160deg) drop-shadow(0 0 7px rgba(0,220,255,1)) drop-shadow(0 0 12px rgba(0,255,170,.8));}
+  75%{filter:hue-rotate(240deg) drop-shadow(0 0 7px rgba(100,255,80,1)) drop-shadow(0 0 12px rgba(255,230,0,.8));}
+}
+
+/* ===== block 12 of 18 | original line 1851 | <style id="MZ_ADMIN_CROWN_AND_TITLE_FINAL"> ===== */
+/* التاج: كبير + دوران + حركة + ألوان متحركة */
+.admin-crown{
+  display:block !important;
+  position:absolute !important;
+  left:50% !important;
+  top:-32px !important;
+  font-size:38px !important;
+  line-height:1 !important;
+  z-index:50 !important;
+  pointer-events:none !important;
+  transform-origin:50% 70% !important;
+  animation:mzCrownSpinMove 1.7s ease-in-out infinite, mzCrownGlowColors 2.8s linear infinite !important;
+}
+
+/* اللقب ADMIN: إضاءة + ألوان تتحرك باستمرار */
+.admin-badge{
+  position:relative !important;
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:700% 100% !important;
+  animation:mzTitleColorMove 2s linear infinite, mzTitleGlow 1.3s ease-in-out infinite !important;
+  box-shadow:0 0 8px rgba(255,255,255,.35),0 0 18px rgba(0,176,255,.45) !important;
+}
+
+.admin-name-wrap{
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:700% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  color:transparent !important;
+  animation:mzTitleNameMove 2s linear infinite, mzTitleNameGlow 1.4s ease-in-out infinite !important;
+}
+
+@keyframes mzCrownSpinMove{
+  0%{transform:translateX(-50%) translateY(0) rotate(-15deg) scale(1)}
+  25%{transform:translateX(-50%) translateY(-7px) rotate(0deg) scale(1.08)}
+  50%{transform:translateX(-50%) translateY(-10px) rotate(15deg) scale(1.16)}
+  75%{transform:translateX(-50%) translateY(-7px) rotate(0deg) scale(1.08)}
+  100%{transform:translateX(-50%) translateY(0) rotate(-15deg) scale(1)}
+}
+@keyframes mzCrownGlowColors{
+  0%{filter:hue-rotate(0deg) drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 12px #ff8a00)}
+  50%{filter:hue-rotate(180deg) drop-shadow(0 0 8px #00e5ff) drop-shadow(0 0 16px #7c4dff)}
+  100%{filter:hue-rotate(360deg) drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 12px #ff8a00)}
+}
+@keyframes mzTitleColorMove{
+  0%{background-position:0% 50%}
+  100%{background-position:700% 50%}
+}
+@keyframes mzTitleGlow{
+  0%,100%{filter:brightness(1);transform:scale(1)}
+  50%{filter:brightness(1.35);transform:scale(1.04)}
+}
+@keyframes mzTitleNameMove{
+  0%{background-position:0% 50%}
+  100%{background-position:700% 50%}
+}
+@keyframes mzTitleNameGlow{
+  0%,100%{filter:brightness(1) drop-shadow(0 0 1px rgba(255,255,255,.2))}
+  50%{filter:brightness(1.5) drop-shadow(0 0 5px rgba(255,255,255,.8))}
+}
+
+/* ===== block 13 of 18 | original line 1914 | <style id="MZ_CROWN_REAL_SPIN_COLORS_FINAL"> ===== */
+/* التاج الفعلي داخل ADMIN: دوران كامل + ألوان متحركة + إضاءة */
+.admin-badge-crown{
+  display:inline-block !important;
+  font-size:28px !important;
+  line-height:1 !important;
+  transform-origin:50% 55% !important;
+  animation:mzRealCrownSpin 1.35s linear infinite, mzRealCrownGlow 2.4s linear infinite !important;
+  filter:drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 12px #ff8a00) !important;
+}
+.admin-badge{
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:900% 100% !important;
+  animation:mzRealTitleColors 2.1s linear infinite, mzRealTitleGlow 1.25s ease-in-out infinite !important;
+}
+.admin-name-wrap{
+  background:linear-gradient(90deg,#ff1744,#ff8a00,#ffee00,#00e676,#00b0ff,#7c4dff,#ff1744) !important;
+  background-size:900% 100% !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  color:transparent !important;
+  animation:mzRealNameColors 2s linear infinite, mzRealNameGlow 1.35s ease-in-out infinite !important;
+}
+@keyframes mzRealCrownSpin{
+  0%{transform:rotate(0deg) scale(1)}
+  25%{transform:rotate(90deg) scale(1.08)}
+  50%{transform:rotate(180deg) scale(1.15)}
+  75%{transform:rotate(270deg) scale(1.08)}
+  100%{transform:rotate(360deg) scale(1)}
+}
+@keyframes mzRealCrownGlow{
+  0%{filter:hue-rotate(0deg) drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 12px #ff8a00)}
+  25%{filter:hue-rotate(90deg) drop-shadow(0 0 8px #ff00aa) drop-shadow(0 0 15px #7c4dff)}
+  50%{filter:hue-rotate(180deg) drop-shadow(0 0 8px #00e5ff) drop-shadow(0 0 16px #00ff88)}
+  75%{filter:hue-rotate(270deg) drop-shadow(0 0 8px #7cff00) drop-shadow(0 0 15px #ffee00)}
+  100%{filter:hue-rotate(360deg) drop-shadow(0 0 5px #ffd700) drop-shadow(0 0 12px #ff8a00)}
+}
+@keyframes mzRealTitleColors{0%{background-position:0% 50%}100%{background-position:900% 50%}}
+@keyframes mzRealNameColors{0%{background-position:0% 50%}100%{background-position:900% 50%}}
+@keyframes mzRealTitleGlow{0%,100%{filter:brightness(1);transform:scale(1)}50%{filter:brightness(1.45);transform:scale(1.05)}}
+@keyframes mzRealNameGlow{0%,100%{filter:brightness(1) drop-shadow(0 0 1px rgba(255,255,255,.2))}50%{filter:brightness(1.55) drop-shadow(0 0 7px rgba(255,255,255,.9))}}
+
+/* ===== block 14 of 18 | original line 1958 | <style id="MZ_CROWN_MOVES_LOCATION_REAL_FINAL"> ===== */
+/* التاج يتحرك في المكان فعليًا: يمين/شمال + فوق/تحت + دوران كامل */
+.chapter-comment-user-main{overflow:visible !important;}
+.admin-badge{overflow:visible !important;position:relative !important;}
+.admin-badge::before{
+  content:"👑" !important;
+  display:block !important;
+  position:absolute !important;
+  left:50% !important;
+  top:-34px !important;
+  width:auto !important;
+  height:auto !important;
+  font-size:40px !important;
+  line-height:1 !important;
+  z-index:999 !important;
+  pointer-events:none !important;
+  transform-origin:50% 70% !important;
+  animation:mzCrownActuallyMoves 2.2s ease-in-out infinite !important;
+  filter:drop-shadow(0 0 6px #ffd700) drop-shadow(0 0 14px #ff8a00) !important;
+}
+@keyframes mzCrownActuallyMoves{
+  0%{transform:translate(-50%,0) rotate(-25deg) scale(1);}
+  15%{transform:translate(calc(-50% - 18px),-5px) rotate(-55deg) scale(1.08);}
+  30%{transform:translate(calc(-50% - 28px),-1px) rotate(-10deg) scale(1.15);}
+  45%{transform:translate(calc(-50% - 10px),-13px) rotate(45deg) scale(1.1);}
+  60%{transform:translate(calc(-50% + 18px),-7px) rotate(105deg) scale(1.18);}
+  75%{transform:translate(calc(-50% + 28px),-2px) rotate(170deg) scale(1.08);}
+  90%{transform:translate(calc(-50% + 10px),-11px) rotate(250deg) scale(1.12);}
+  100%{transform:translate(-50%,0) rotate(335deg) scale(1);}
+}
+@media(max-width:520px){
+  .admin-badge::before{font-size:34px !important;top:-30px !important;}
+}
+
+/* ===== block 15 of 18 | original line 1993 | <style id="MZ_CHAPTER_DELETE_OUTSIDE_FIX"> ===== */
+#mangaPage .chapter-item{
+  display:flex;
+  align-items:stretch;
+  gap:10px;
+  padding:0 !important;
+  cursor:default !important;
+}
+#mangaPage .chapter-main-click{
+  flex:1;
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border:0;
+  background:transparent;
+  color:inherit;
+  text-align:right;
+  padding:13px 14px;
+  cursor:pointer;
+  border-radius:14px;
+  font:inherit;
+}
+#mangaPage .chapter-main-click:hover{background:#1b1522;}
+#mangaPage .chapter-main-text{min-width:0;}
+#mangaPage .chapter-item-actions.chapter-delete-outside{
+  display:flex !important;
+  align-items:center;
+  flex:0 0 auto;
+  padding:8px 8px 8px 0;
+}
+#mangaPage .chapter-delete-btn{
+  border:1px solid rgba(255,75,95,.45);
+  border-radius:10px;
+  background:#32151b;
+  color:#ff9aa5;
+  padding:9px 11px;
+  font-size:12px;
+  font-weight:900;
+  cursor:pointer;
+  white-space:nowrap;
+}
+#mangaPage .chapter-delete-btn:hover{
+  background:#5a1c27;
+  color:#fff;
+  border-color:#ff5570;
+}
+@media(max-width:520px){
+  #mangaPage .chapter-item{flex-direction:column;gap:0;}
+  #mangaPage .chapter-item-actions.chapter-delete-outside{padding:0 10px 10px;}
+  #mangaPage .chapter-delete-btn{width:100%;}
+}
+
+/* ===== block 16 of 18 | original line 2047 | <style id="MZ_CHAPTER_QUALITY_FINAL_OVERRIDE"> ===== */
+.reader-pages{width:100%!important;overflow-x:hidden!important;}
+.reader-pages img{display:block!important;width:auto!important;max-width:100%!important;height:auto!important;margin:0 auto!important;image-rendering:auto!important;}
+
+/* ===== block 17 of 18 | original line 2052 | <style id="MZ_ADSENSE_CHAPTER_BOTTOM"> ===== */
+/* Fixed chapter banner: it appears from the moment the reader opens and stays
+   pinned to the bottom while the manga pages scroll normally underneath it. */
+.mz-chapter-ad-wrap{
+  position:fixed;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:min(100%, 728px);
+  min-height:0;
+  z-index:9998;
+  display:none;
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0;
+  box-shadow:none;
+  overflow:hidden;
+  pointer-events:auto;
+}
+body[data-chapter-reader="1"] .mz-chapter-ad-wrap{display:block;}
+.mz-chapter-ad-wrap .adsbygoogle{
+  display:block!important;
+  width:100%!important;
+  min-height:50px;
+  margin:0 auto!important;
+}
+@media (max-width:480px){
+  .mz-chapter-ad-wrap{width:100%;}
+  .mz-chapter-ad-wrap .adsbygoogle{min-height:50px;}
+}
+/* Give the reader enough bottom room so the fixed banner does not hide the last
+   part of the chapter/comments, while the pages themselves still scroll normally. */
+body[data-chapter-reader="1"] #chapterReader{padding-bottom:76px !important;}
+/* Never allow an ad element to create the old giant white comments box. */
+#chapterCommentsBox{height:auto!important;min-height:0!important;background:transparent!important;}
+#chapterCommentsBox .chapter-comments-box{height:auto!important;min-height:0!important;max-height:none!important;background:#15131c!important;border:1px solid #292533!important;}
+#chapterCommentsBox .adsbygoogle{display:none!important;}
+
+/* ===== block 18 of 18 | original line 6177 | <style > ===== */
+  #mzProfilePage{z-index:100000!important;}
+  #mzProfilePage #mzProfileClose{position:relative;z-index:100002!important;pointer-events:auto!important;cursor:pointer!important;}
+  #mzProfilePage.is-open{display:block!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;}
+  #mzProfilePage.is-closed{display:none!important;pointer-events:none!important;}
+
+/* ===== MangaZERO logo + entrance animation ===== */
+.logo .mz-logo-img{width:38px;height:38px;border-radius:10px;object-fit:cover;display:block}
+#mzSplash{position:fixed;inset:0;z-index:99999;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#0a0614;animation:mzSplashOut .45s ease .95s forwards}
+#mzSplash .mz-splash-logo{width:190px;height:190px;border-radius:28px;object-fit:cover;box-shadow:0 0 60px rgba(150,60,255,.55);animation:mzSplashIn .8s cubic-bezier(.2,.9,.3,1.4) both}
+#mzSplash .mz-splash-name{font-weight:900;font-size:26px;letter-spacing:.5px;color:#fff;animation:mzSplashIn .8s ease .12s both}
+#mzSplash .mz-splash-name span{color:#a855f7}
+@keyframes mzSplashIn{from{opacity:0;transform:scale(.72)}to{opacity:1;transform:scale(1)}}
+@keyframes mzSplashOut{to{opacity:0;visibility:hidden}}
+@media (prefers-reduced-motion: reduce){
+  #mzSplash{display:none}
+  #mzSplash .mz-splash-logo,#mzSplash .mz-splash-name{animation:none}
+}
+
+/* ===== MangaZERO motion layer (كل الموقع) ===== */
+:root{--mz-ease:cubic-bezier(.2,.8,.25,1);--mz-spring:cubic-bezier(.2,1.35,.4,1)}
+
+@keyframes mzFadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes mzFadeIn{from{opacity:0}to{opacity:1}}
+@keyframes mzPopIn{0%{opacity:0;transform:scale(.92)}62%{transform:scale(1.025)}100%{opacity:1;transform:scale(1)}}
+@keyframes mzPageIn{from{opacity:0;transform:translateY(14px) scale(.992)}to{opacity:1;transform:none}}
+@keyframes mzSlideIn{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+
+/* الصفحات كلها بتدخل بحركة ناعمة */
+:where(#mangaPage,#adminPage,#mzAccountPage,#mzHistoryPage,#mzProfilePage,#mzPublicProfilePage,#mzStorePage,#mzSupportPage,#mzTasksPage,#mzTermsPage,#sitePage){animation:mzPageIn .42s var(--mz-ease) both}
+
+/* الهيدر والبحث والتابات */
+:where(.header,.normal-nav,.search-box,.section-title){animation:mzFadeUp .5s var(--mz-ease) both}
+.normal-nav{animation-delay:.05s}
+.search-box{animation-delay:.1s}
+
+/* الكروت والعناصر المتكررة */
+:where(.manga-card,.manga-section-card,.chapter-item,.comment-item,.chapter-comment-item,.admin-card,.admin-user-card,.admin-report-card,.admin-helper-card,.admin-support-user,.mz-support-msg,.mz-history-item,.mz-public-fav,.stat,.add-box,.mz-profile-block,.mz-store-section,.mz-support-card,.mz-points-card,.mz-profile-stat,.mz-account-card,.next-chapter-wrap){animation:mzFadeUp .45s var(--mz-ease) both}
+
+/* تتابع بسيط للكروت جوه القوايم */
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(2){animation-delay:.04s}
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(3){animation-delay:.08s}
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(4){animation-delay:.12s}
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(5){animation-delay:.16s}
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(6){animation-delay:.2s}
+:where(.manga-card,.chapter-item,.comment-item,.chapter-comment-item,.mz-history-item,.mz-public-fav):nth-child(n+7){animation-delay:.24s}
+
+/* الأزرار: ضغطة + رفع + إضاءة */
+:where(button,.save-button,.manga-page-action,.admin-action-btn,.comment-report-btn,.chapter-comment-action,.mz-primary,.mz-secondary,.mz-profile-save,.next-chapter-btn,.chapter-main-click,.mz-google-btn){
+  transition:transform .18s var(--mz-ease),box-shadow .24s var(--mz-ease),background-color .24s ease,border-color .24s ease,color .24s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+:where(button,.save-button,.manga-page-action,.admin-action-btn,.mz-primary,.mz-secondary,.mz-profile-save,.next-chapter-btn,.mz-google-btn,.mz-profile-primary-action):not(:disabled):active{transform:scale(.965)}
+:where(button,.manga-page-action,.admin-action-btn,.mz-primary,.next-chapter-btn):not(:disabled):hover{box-shadow:0 8px 22px rgba(140,70,220,.34)}
+
+/* الحقول: إضاءة عند الكتابة */
+:where(input[type=text],input[type=email],input[type=password],input[type=search],textarea,.mz-input,.mz-profile-input){
+  transition:border-color .25s ease,box-shadow .25s ease,background-color .25s ease;
+}
+:where(input[type=text],input[type=email],input[type=password],input[type=search],textarea,.mz-input,.mz-profile-input):focus{
+  border-color:#a657e5;
+  box-shadow:0 0 0 4px rgba(166,87,229,.16);
+}
+
+/* صور الفصول تظهر واحدة ورا التانية */
+.reader-pages img{animation:mzFadeIn .45s ease both}
+.reader-pages img:nth-child(2){animation-delay:.05s}
+.reader-pages img:nth-child(3){animation-delay:.1s}
+.reader-pages img:nth-child(4){animation-delay:.15s}
+.reader-pages img:nth-child(5){animation-delay:.2s}
+
+/* التوست */
+#toast{transform:translateX(-50%) translateY(26px) scale(.96);transition:opacity .22s ease,transform .38s var(--mz-spring)}
+#toast.show{transform:translateX(-50%) translateY(0) scale(1)}
+
+/* الماوس: رفع الكروت وتكبير الأغلفة */
+@media (hover:hover) and (pointer:fine){
+  .manga-card{transition:transform .28s var(--mz-ease),box-shadow .28s var(--mz-ease),border-color .28s ease}
+  .manga-card:hover{transform:translateY(-6px) scale(1.012);box-shadow:0 18px 42px rgba(120,60,200,.3)}
+  .manga-cover img,.manga-card img{transition:transform .5s var(--mz-ease)}
+  .manga-card:hover .manga-cover img,.manga-card:hover img{transform:scale(1.06)}
+  .chapter-item{transition:transform .25s var(--mz-ease),border-color .25s ease,box-shadow .25s ease}
+  .chapter-item:hover{transform:translateX(-4px);box-shadow:0 10px 26px rgba(0,0,0,.3)}
+  .manga-section-card:hover,.admin-card:hover,.mz-profile-block:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.34)}
+  .manga-section-card,.admin-card,.mz-profile-block{transition:transform .3s var(--mz-ease),box-shadow .3s var(--mz-ease)}
+  .logo .mz-logo-img{transition:transform .4s var(--mz-spring)}
+  .logo:hover .mz-logo-img{transform:rotate(-7deg) scale(1.08)}
+  .normal-nav button{transition:transform .2s var(--mz-ease),background-color .25s ease,color .25s ease}
+  .normal-nav button:hover{transform:translateY(-2px)}
+}
+
+/* احترام إعداد تقليل الحركة */
+@media (prefers-reduced-motion: reduce){
+  *,*:before,*:after{animation-duration:.001ms!important;animation-delay:0ms!important;transition-duration:.001ms!important}
+  #mzSplash{display:none}
+}
