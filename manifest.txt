@@ -1,0 +1,17 @@
+{
+  "name": "MangaZERO",
+  "short_name": "MangaZERO",
+  "description": "مانجا زيرو - اقرأ مانجا عربية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#12081f",
+  "theme_color": "#12081f",
+  "icons": [
+    { "src": "logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}
