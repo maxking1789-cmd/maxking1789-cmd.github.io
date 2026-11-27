@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta name="google-adsense-account" content="ca-pub-8457182771905589">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8457182771905589"
+     crossorigin="anonymous"></script>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      user-scalable=no">
+
+<title>MangaZERO</title>
+
+<link rel="icon" type="image/png" sizes="512x512" href="logo.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#12081f">
+<meta property="og:title" content="MangaZERO">
+<meta property="og:description" content="منصة قراءة مانجا وروايات بالعربي">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="logo.png">
+
+<link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+<!-- MZ_ADMIN_CROWN_BIG_V1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="MZ_TASKS_STORE_CSS">
+
+/* ===== PROFILE STORE BACKGROUND PREVIEWS ===== */
+.mz-bg-preview{position:relative;height:150px;border-radius:14px;overflow:hidden;margin:10px;border:1px solid rgba(255,255,255,.12);background:#111}
+.mz-bg-preview .mz-profile-bg-layer{position:absolute;inset:0!important;z-index:0}
+.mz-bg-preview-label{position:absolute;inset:auto 10px 10px 10px;z-index:2;padding:7px 9px;border-radius:10px;background:rgba(0,0,0,.48);backdrop-filter:blur(5px);font-weight:900;text-align:center}
+.mz-bg-admin-gold{background:radial-gradient(circle at 50% 20%,#fff2a6 0,#d9a72b 18%,#5b3905 45%,#160d02 100%);background-size:200% 200%;animation:mzAdminGold 3s ease-in-out infinite}
+.mz-bg-admin-gold:before,.mz-bg-admin-gold:after{content:"";position:absolute;inset:12%;border:2px solid rgba(255,220,92,.7);border-radius:22px;box-shadow:0 0 25px rgba(255,193,7,.55),inset 0 0 25px rgba(255,193,7,.18);animation:mzAdminGoldRing 2.2s ease-in-out infinite}
+.mz-bg-admin-gold:after{inset:25%;border-color:rgba(255,245,190,.55);animation-delay:-1.1s}
+.mz-bg-admin-void{background:radial-gradient(circle at 50% 40%,#47106d 0,#17051f 35%,#050308 75%);overflow:hidden}
+.mz-bg-admin-void:before{content:"";position:absolute;inset:-40%;background:conic-gradient(from 0deg,transparent,#a855f7,transparent,#00d9ff,transparent,#a855f7,transparent);filter:blur(22px);opacity:.75;animation:mzAdminVoid 5s linear infinite}
+.mz-bg-admin-void:after{content:"✦  ✧  ✦  ✧  ✦";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#f3d8ff;font-size:24px;letter-spacing:16px;text-shadow:0 0 15px #c45cff;animation:mzAdminStars 2s ease-in-out infinite}
+@keyframes mzAdminGold{0%,100%{background-position:50% 0;filter:saturate(1)}50%{background-position:50% 100%;filter:saturate(1.35)}}
+@keyframes mzAdminGoldRing{0%,100%{transform:scale(.96) rotate(-2deg);opacity:.65}50%{transform:scale(1.04) rotate(2deg);opacity:1}}
+@keyframes mzAdminVoid{to{transform:rotate(360deg)}}
+@keyframes mzAdminStars{0%,100%{transform:scale(.95);opacity:.65}50%{transform:scale(1.08);opacity:1}}
+.mz-product-card.mz-profile-bg-product{position:relative}
+.mz-product-card.mz-profile-bg-product .mz-product-image{height:auto;padding:0;background:transparent}
+.mz-profile-bg-tag{display:inline-flex;padding:4px 8px;border-radius:999px;font-size:10px;font-weight:900;background:rgba(166,87,229,.18);border:1px solid rgba(196,125,255,.3);margin-bottom:7px}
+.mz-profile-bg-tag.admin{background:rgba(255,193,7,.16);border-color:rgba(255,215,80,.5);color:#ffe58a}
+
+/* ===== MZ TASKS + STORE ===== */
+.mz-points-pill{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:linear-gradient(135deg,#3b2452,#24182f);border:1px solid rgba(196,125,255,.3);color:#fff;font-weight:900;font-size:13px;white-space:nowrap}
+.mz-points-pill b{color:#ffd45c;font-size:15px}
+.mz-system-page{position:fixed;inset:0;z-index:12050;display:none;overflow:auto;background:radial-gradient(circle at top,#2b1939 0,#120e18 48%,#0b0910 100%);padding:24px 14px 45px}
+.mz-system-page.open{display:block}
+.mz-system-inner{width:min(900px,100%);margin:0 auto}
+.mz-system-head{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:18px}
+.mz-system-head-main{display:flex;align-items:center;gap:10px;min-width:0}
+.mz-system-head h2{margin:0;font-size:25px;color:#fff}
+.mz-system-back{border:1px solid rgba(255,255,255,.12);background:#211a29;color:#fff;border-radius:12px;padding:10px 14px;cursor:pointer;font-weight:800}
+.mz-points-card{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:18px;margin-bottom:15px;border:1px solid rgba(196,125,255,.22);border-radius:20px;background:linear-gradient(135deg,#21162b,#17121e);box-shadow:0 15px 45px rgba(0,0,0,.22)}
+.mz-points-card-label{color:#aaa0b2;font-size:12px}.mz-points-number{font-size:34px;font-weight:1000;color:#ffd45c;margin-top:2px}.mz-task-section,.mz-store-section{background:#15121b;border:1px solid #2b2531;border-radius:20px;padding:15px;margin-top:14px}
+.mz-task-section h3,.mz-store-section h3{margin:0 0 5px;font-size:18px}.mz-task-section-note{color:#8f8795;font-size:12px;margin-bottom:13px}
+.mz-task-card{display:flex;align-items:center;gap:12px;padding:14px;background:#100e16;border:1px solid #2b2531;border-radius:15px;margin-top:9px}
+.mz-task-icon{width:44px;height:44px;border-radius:13px;background:#241832;display:flex;align-items:center;justify-content:center;font-size:23px;flex:0 0 44px}.mz-task-main{flex:1;min-width:0}.mz-task-title{font-weight:900;color:#fff}.mz-task-desc{color:#918999;font-size:12px;margin-top:4px;line-height:1.55}.mz-task-progress{height:7px;background:#29232f;border-radius:99px;overflow:hidden;margin-top:9px}.mz-task-progress>i{display:block;height:100%;background:linear-gradient(90deg,#8d4bd0,#d17bff);border-radius:99px;width:0;transition:width .25s ease}.mz-task-count{font-size:11px;color:#aaa1b1;margin-top:5px}.mz-task-reward{color:#ffd45c;font-weight:1000;white-space:nowrap}.mz-task-done{color:#63e6a0;font-weight:900;font-size:12px;white-space:nowrap}.mz-site-task-complete{border:0;border-radius:10px;padding:9px 11px;background:#744a92;color:#fff;font-weight:900;cursor:pointer;white-space:nowrap}.mz-site-task-complete.done{background:#214a36;color:#9ff0be;cursor:default}
+.mz-store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:12px}.mz-product-card{background:#100e16;border:1px solid #2b2531;border-radius:16px;overflow:hidden}.mz-product-image{height:150px;background:#211b29;display:flex;align-items:center;justify-content:center;overflow:hidden}.mz-product-image img{width:100%;height:100%;object-fit:cover}.mz-product-body{padding:13px}.mz-product-name{font-weight:900;font-size:15px}.mz-product-desc{color:#918999;font-size:12px;line-height:1.6;margin-top:5px;min-height:38px}.mz-product-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:11px}.mz-product-price{color:#ffd45c;font-weight:1000}.mz-buy-btn{border:0;border-radius:10px;padding:9px 12px;background:#744a92;color:#fff;font-weight:900;cursor:pointer}.mz-buy-btn:disabled{opacity:.5;cursor:default}.mz-buy-btn-active{background:linear-gradient(135deg,#19a463,#0f7f4d)!important;color:#fff!important;box-shadow:0 0 0 1px rgba(120,255,190,.25),0 5px 18px rgba(25,164,99,.25);cursor:default!important}.mz-store-status{min-height:18px;margin-top:7px;font-size:11px;font-weight:800;line-height:1.5}.mz-product-card{position:relative}.mz-buy-btn{position:relative;z-index:5;pointer-events:auto;touch-action:manipulation}.mz-bg-preview{pointer-events:none}.mz-empty-box{text-align:center;padding:45px 18px;color:#817987;background:#100e16;border:1px dashed #393041;border-radius:15px;margin-top:12px}
+.mz-admin-task-form,.mz-admin-product-form{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:14px;margin-bottom:15px}.mz-admin-task-list{display:flex;flex-direction:column;gap:9px}.mz-admin-task-item{padding:12px;border:1px solid rgba(255,255,255,.09);background:#17131d;border-radius:13px}.mz-admin-task-row{display:flex;justify-content:space-between;gap:10px;align-items:center}.mz-admin-mini-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.mz-admin-mini-actions button{border:0;border-radius:8px;padding:7px 9px;cursor:pointer;font-weight:800}.mz-mini-delete{background:#ff5577;color:#fff}.mz-mini-toggle{background:#33283e;color:#fff}
+html.mz-day-mode .mz-system-page{background:#f4f1f7}html.mz-day-mode .mz-system-page h2,html.mz-day-mode .mz-task-section h3,html.mz-day-mode .mz-store-section h3,html.mz-day-mode .mz-task-title,html.mz-day-mode .mz-product-name{color:#222}html.mz-day-mode .mz-points-card,html.mz-day-mode .mz-task-section,html.mz-day-mode .mz-store-section{background:#fff;border-color:#ddd5e5}html.mz-day-mode .mz-task-card,html.mz-day-mode .mz-product-card,html.mz-day-mode .mz-empty-box{background:#f8f6fa;border-color:#ddd5e5}html.mz-day-mode .mz-task-desc,html.mz-day-mode .mz-product-desc,html.mz-day-mode .mz-task-section-note{color:#666}
+@media(max-width:600px){.mz-system-page{padding:15px 10px 35px}.mz-system-head h2{font-size:21px}.mz-points-card{padding:15px}.mz-points-number{font-size:29px}.mz-task-card{align-items:flex-start}.mz-task-reward{font-size:12px}.mz-store-grid{grid-template-columns:1fr 1fr}.mz-product-image{height:125px}}
+@media(max-width:390px){.mz-store-grid{grid-template-columns:1fr}.mz-task-card{flex-wrap:wrap}.mz-site-task-complete{width:100%}}
+
+<style id="MZ_SIDEBAR_SCROLL_FIX">
+/* Sidebar can scroll vertically while the page behind it stays completely locked. */
+html.mz-sidebar-open,
+html.mz-sidebar-open body{
+  overflow:hidden !important;
+  overscroll-behavior:none !important;
+  touch-action:none !important;
+}
+html.mz-sidebar-open body{
+  position:fixed !important;
+  width:100% !important;
+  left:0 !important;
+  right:0 !important;
+}
+/* Only the sidebar itself is allowed to receive vertical touch/scroll. */
+html.mz-sidebar-open .mz-sidebar{
+  touch-action:pan-y !important;
+  overscroll-behavior:contain !important;
+}
+/* Sidebar can scroll vertically on phones and small screens. */
+.mz-sidebar{
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+  max-height:100vh !important;
+  box-sizing:border-box !important;
+  -webkit-overflow-scrolling:touch !important;
+  overscroll-behavior:contain !important;
+  touch-action:pan-y !important;
+}
+.mz-sidebar::-webkit-scrollbar{width:6px}
+.mz-sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.22);border-radius:99px}
+.mz-sidebar::-webkit-scrollbar-track{background:transparent}
+.mz-sidebar .mz-side-close{position:sticky !important;top:0 !important;float:right !important;z-index:5 !important}
+.mz-sidebar .mz-side-title,.mz-sidebar .mz-side-user{clear:both}
+@media(max-width:600px){
+  .mz-sidebar{width:min(285px,88vw) !important;padding-bottom:28px !important}
+}
+
+/* ===== download app page ===== */
+.mz-dl-page{position:fixed;inset:0;z-index:999998;display:none;overflow:auto;padding:18px 18px 44px;
+ background:radial-gradient(circle at 50% 0%,#2b1939 0,#120e18 45%,#090711 100%)}
+.mz-dl-page.open{display:block}
+body.mz-dl-open .mzai-fab,body.mz-dl-open .mzai-ha{display:none!important}
+.mz-dl-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.mz-dl-back{border:1px solid rgba(255,255,255,.12);background:#17131d;color:#fff;border-radius:12px;padding:10px 15px;font-size:15px;font-weight:700;cursor:pointer}
+.mz-dl-brand{font-size:18px;font-weight:900;color:#c9a8ee;letter-spacing:.3px}
+.mz-dl-hero{text-align:center;max-width:460px;margin:0 auto 22px}
+.mz-dl-icon{width:104px;height:104px;border-radius:24px;object-fit:cover;display:block;margin:0 auto 16px;
+ border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 45px rgba(123,63,192,.45)}
+.mz-dl-hero h1{font-size:24px;line-height:1.35;margin-bottom:10px;color:#fff}
+.mz-dl-hero p{color:#a99fb5;font-size:14.5px;line-height:1.7}
+.mz-dl-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:460px;margin:22px auto 10px;
+ padding:17px 20px;border-radius:16px;background:linear-gradient(135deg,#7b3fc0,#a657e5);color:#fff;font-size:17px;
+ font-weight:900;text-decoration:none;box-shadow:0 16px 40px rgba(123,63,192,.45)}
+.mz-dl-btn:active{transform:scale(.98)}
+.mz-dl-meta{text-align:center;color:#8d8498;font-size:12.5px;margin-bottom:26px}
+.mz-dl-card{max-width:460px;margin:0 auto;background:rgba(23,18,31,.96);border:1px solid rgba(255,255,255,.1);
+ border-radius:22px;padding:20px}
+.mz-dl-card h2{font-size:16.5px;margin-bottom:14px;color:#fff}
+.mz-dl-step{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.mz-dl-step:last-child{border-bottom:0;padding-bottom:0}
+.mz-dl-num{flex:0 0 26px;height:26px;border-radius:50%;background:#2a1d3a;color:#c9a8ee;display:flex;
+ align-items:center;justify-content:center;font-size:13px;font-weight:900}
+.mz-dl-step p{color:#d7d0de;font-size:14px;line-height:1.65}
+.mz-dl-note{max-width:460px;margin:16px auto 0;color:#8d8498;font-size:12.5px;line-height:1.8;text-align:center}
+</style>
+</style>
+<link rel="manifest" href="manifest.json">
+</head>
+
+
+<body>
+<!-- ===== MangaZERO entrance animation ===== -->
+<div id="mzSplash" aria-hidden="true">
+  <img src="logo.png" alt="" class="mz-splash-logo">
+</div>
+<!-- ===== USER PROFILE PAGE ===== -->
+<section id="mzProfilePage" class="mz-profile-page">
+  <div class="mz-profile-card" id="mzOwnProfileCard">
+    <div class="mz-profile-bg-layer" id="mzOwnProfileBgLayer"></div>
+    <div class="mz-profile-bg-content-shade"></div>
+
+    <div class="mz-profile-topbar">
+      <button id="mzProfileClose" class="mz-profile-back" type="button">← رجوع</button>
+      <div class="mz-profile-top-title">الملف الشخصي</div>
+      <div class="mz-profile-top-spacer"></div>
+    </div>
+
+    <div class="mz-profile-hero">
+      <div class="mz-profile-hero-avatar" id="mzProfileAvatar"><span class="mz-profile-avatar-fallback">👤</span></div>
+      <div class="mz-profile-hero-info">
+        <div class="mz-profile-hero-name" id="mzProfileHeroName">حسابي</div>
+        <div class="mz-profile-hero-sub">إدارة بيانات حسابك ومظهرك داخل MangaZERO</div>
+        <div id="mzProfileHeroBadge" class="mz-profile-hero-badge">👤 عضو</div>
+      </div>
+      <div class="mz-profile-points-card"><span>🪙</span><b id="mzProfilePoints">0</b><small>نقطة</small></div>
+    </div>
+
+    <div class="mz-profile-stats mz-profile-stats-hero">
+      <div class="mz-profile-stat"><div id="mzProfileCommentCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">💬 التعليقات</span></div>
+      <div class="mz-profile-stat"><div id="mzProfileChapterCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">📖 الفصول</span></div>
+      <div class="mz-profile-stat"><div id="mzProfileMangaCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">📚 المانجا</span></div>
+    </div>
+
+    <div class="mz-profile-section-grid">
+      <div class="mz-profile-block mz-profile-section-card">
+        <div class="mz-profile-section-title"><span>🖼️</span><div><b>صورة الملف الشخصي</b><small>صورتك التي تظهر للناس في التعليقات والملف العام</small></div></div>
+        <div class="mz-profile-avatar-edit">
+          <div class="mz-profile-avatar-preview" id="mzProfileAvatarPreview"><span>👤</span></div>
+          <div class="mz-profile-avatar-actions">
+            <label class="mz-profile-primary-action">🖼️ اختيار صورة<input id="mzProfileAvatarInput" type="file" accept="image/*"></label>
+            <button id="mzProfileAvatarRemove" class="mz-profile-secondary-action" type="button">إزالة الصورة</button>
+          </div>
+        </div>
+        <div id="mzProfileAvatarHint" class="mz-profile-hint">الصورة محفوظة على Cloudinary ومربوطة بحسابك.</div>
+      </div>
+
+      <div class="mz-profile-block mz-profile-section-card">
+        <div class="mz-profile-section-title"><span>✏️</span><div><b>اسم المستخدم</b><small>الاسم الذي سيظهر داخل الموقع</small></div></div>
+        <input id="mzUsernameInput" class="mz-profile-input" maxlength="30" placeholder="اكتب اسمك داخل الموقع..." autocomplete="off">
+        <div id="mzUsernameHint" class="mz-profile-hint">الاسم ده هيتحفظ مرة واحدة ومش هتقدر تغيّره بعد كده.</div>
+        <button id="mzUsernameSave" class="mz-profile-save" type="button">💾 حفظ الاسم</button>
+      </div>
+    </div>
+
+    <div id="mzAdminTitleBlock" class="mz-profile-block mz-profile-section-card mz-admin-title-box">
+      <div class="mz-profile-section-title"><span>👑</span><div><b>ألقاب حساب الأدمن</b><small>يمكن اختيار لقبين — تغيير اللقب لا يغيّر صلاحيات الحساب</small></div></div>
+      <div class="mz-profile-select-grid">
+        <select id="mzAdminTitleSelect" class="mz-admin-title-select"><option value="admin">👑 ADMIN</option><option value="moderator">🛡️ مشرف</option><option value="supporter">💎 داعم</option><option value="veteran">⚡ مخضرم</option><option value="member">👤 عضو</option></select>
+        <select id="mzAdminTitleSelect2" class="mz-admin-title-select"><option value="">— اللقب الثاني —</option><option value="admin">👑 ADMIN</option><option value="moderator">🛡️ مشرف</option><option value="supporter">💎 داعم</option><option value="veteran">⚡ مخضرم</option><option value="member">👤 عضو</option></select>
+      </div>
+      <button id="mzAdminTitleSave" class="mz-profile-save" type="button">💾 حفظ الألقاب</button>
+    </div>
+
+    <div class="mz-profile-block mz-profile-section-card">
+      <div class="mz-profile-section-title"><span>📝</span><div><b>نبذة عنك</b><small>نبذة قصيرة تظهر في ملفك العام</small></div></div>
+      <textarea id="mzBioInput" class="mz-profile-input mz-profile-textarea" maxlength="500" placeholder="اكتب نبذة بسيطة عن نفسك..."></textarea>
+      <div id="mzBioHint" class="mz-profile-hint">النبذة دي هتظهر للناس لما يفتحوا ملفك الشخصي.</div>
+      <button id="mzBioSave" class="mz-profile-save" type="button">💾 حفظ النبذة</button>
+    </div>
+
+    <div class="mz-profile-block mz-profile-section-card">
+      <div class="mz-profile-section-title"><span>🎨</span><div><b>خلفية ملفك الشخصي</b><small>الخلفية تظهر لأي شخص يفتح ملفك</small></div></div>
+      <div id="mzProfileBackgroundCurrent" class="mz-profile-current-bg">جاري تحميل الخلفية...</div>
+      <select id="mzProfileBackgroundSelect" class="mz-profile-input"><option value="">بدون خلفية مخصصة</option></select>
+      <button id="mzProfileBackgroundSave" class="mz-profile-save" type="button">✨ تفعيل الخلفية</button>
+    </div>
+
+    <div class="mz-profile-block mz-profile-section-card">
+      <div class="mz-profile-section-title"><span>⚙️</span><div><b>مظهر الموقع</b><small>اختار المظهر الذي يناسبك</small></div></div>
+      <div class="mz-theme-options"><button id="mzProfileThemeToggle" class="mz-theme-btn" type="button">🌙 الوضع الليلي</button></div>
+      <div id="mzThemeHint" class="mz-profile-hint">اختيارك بيتحفظ على حسابك.</div>
+    </div>
+
+    <div class="mz-profile-footer-note">MangaZERO • ملفك الشخصي وإعدادات حسابك</div>
+  </div>
+</section>
+
+<!-- ===== PUBLIC USER PROFILE PAGE ===== -->
+<section id="mzPublicProfilePage" class="mz-public-profile-page">
+  <div class="mz-public-profile-card" id="mzPublicProfileCard">
+    <div class="mz-profile-bg-layer" id="mzPublicProfileBgLayer"></div><div class="mz-profile-bg-content-shade"></div>
+    <div class="mz-public-profile-head">
+      <div class="mz-public-profile-user">
+        <div id="mzPublicProfileAvatar" class="mz-public-profile-avatar-fallback">👤</div>
+        <div>
+          <div id="mzPublicProfileName" class="mz-public-profile-name">مستخدم</div>
+          <div id="mzPublicProfileTitle" class="mz-public-profile-title"></div>
+        </div>
+      </div>
+      <button id="mzPublicProfileClose" class="mz-support-close" type="button">← رجوع</button>
+    </div>
+    <div id="mzPublicProfileBio" class="mz-public-profile-bio">لا توجد نبذة عن هذا المستخدم حتى الآن.</div>
+    <div class="mz-profile-stats" aria-label="إحصائيات المستخدم">
+      <div class="mz-profile-stat"><div id="mzPublicProfileCommentCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">💬 التعليقات</span></div>
+      <div class="mz-profile-stat"><div id="mzPublicProfileChapterCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">📖 الفصول المقروءة</span></div>
+      <div class="mz-profile-stat"><div id="mzPublicProfileMangaCount" class="mz-profile-stat-number">0</div><span class="mz-profile-stat-label">📚 المانجا المقروءة</span></div>
+    </div>
+    <div class="mz-public-profile-section">
+      <h3>⭐ المفضلات</h3>
+      <div id="mzPublicProfileFavorites" class="mz-public-favorites"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRIVATE SUPPORT CHAT ===== -->
+<section id="mzSupportPage" class="mz-support-page">
+  <div class="mz-support-card">
+    <div class="mz-support-head"><h2>💬 التحدث مع الأدمن</h2><button id="mzSupportClose" class="mz-support-close">✕ إغلاق</button></div>
+    <div class="mz-support-note">المحادثة دي خاصة بينك وبين صاحب الموقع فقط. المستخدمين التانيين مش هيقدروا يشوفوا رسائلك.</div>
+    <div id="mzSupportMessages" class="mz-support-messages"><div class="admin-support-empty">جاري تحميل المحادثة...</div></div>
+    <div class="mz-support-form"><input id="mzSupportInput" class="mz-support-input" maxlength="1000" placeholder="اكتب رسالتك أو مشكلتك..."/><button id="mzSupportSend" class="mz-support-send">إرسال</button></div>
+  </div>
+</section>
+
+<!-- ===== READING HISTORY PAGE ===== -->
+<section id="mzHistoryPage" class="mz-history-page">
+  <div class="mz-history-head">
+    <button id="mzHistoryBack" class="mz-history-back" type="button">←</button>
+    <h2>📚 السجلات</h2>
+  </div>
+  <div id="mzHistoryList" class="mz-history-list"></div>
+</section>
+
+<!-- ===== TERMS & CONDITIONS ===== -->
+<section id="mzTermsPage" class="mz-terms-page" aria-modal="true" role="dialog" aria-labelledby="mzTermsTitle">
+  <div class="mz-terms-card">
+    <div class="mz-terms-head">
+      <h2 id="mzTermsTitle">📜 الشروط والأحكام</h2>
+      <button id="mzTermsClose" class="mz-terms-close" type="button">✕</button>
+    </div>
+    <div class="mz-terms-body">
+      <p><strong>آخر تحديث: 27 سبتمبر 2026 — الإصدار v2</strong></p>
+      <p>مرحبًا بك في <strong>MangaZERO</strong>. هذه الشروط تنظّم استخدامك للموقع والتطبيق والخدمات والمحتوى والميزات المرتبطة به. باستخدامك للخدمة بعد تسجيل الدخول أو استمرارك في استخدامها بعد الموافقة، فإنك تقر بأنك قرأت هذه الشروط وفهمتها وتوافق على الالتزام بها.</p>
+
+      <h3>1. قبول الشروط والأهلية</h3>
+      <p>لا يجوز لك استخدام MangaZERO إذا كنت غير قادر قانونيًا على الموافقة على هذه الشروط. إذا كنت تستخدم الخدمة نيابةً عن شخص آخر أو جهة، فأنت تقر بأن لديك الصلاحية اللازمة لذلك. إذا لم توافق على أي بند، يجب عليك عدم استخدام الخدمة وتسجيل الخروج.</p>
+
+      <h3>2. الحساب وتسجيل الدخول</h3>
+      <ul>
+        <li>تسجيل الدخول يتم عبر Google، وأنت مسؤول عن الحساب الذي تستخدمه.</li>
+        <li>يُمنع استخدام حساب شخص آخر أو انتحال هوية أي شخص أو جهة.</li>
+        <li>يجب تقديم معلومات صحيحة وعدم محاولة إنشاء هوية مضللة أو استخدام وسائل للتحايل على أنظمة الموقع.</li>
+        <li>يحق لـ MangaZERO اتخاذ إجراءات على الحسابات المخالفة، بما في ذلك تقييد أو تعليق أو إنهاء الوصول، وفقًا لهذه الشروط.</li>
+      </ul>
+
+      <h3>3. الاستخدام المسموح</h3>
+      <p>تلتزم باستخدام الموقع لأغراض مشروعة وطبيعية فقط، وبطريقة لا تعطل الخدمة ولا تضر بالمستخدمين أو الخوادم أو قواعد البيانات أو أنظمة التخزين أو أي خدمة مرتبطة بالموقع.</p>
+
+      <h3>4. الاستخدامات المحظورة</h3>
+      <p>يُمنع منعًا صريحًا القيام بأي من الآتي:</p>
+      <ul>
+        <li>اختراق الموقع أو محاولة تجاوز تسجيل الدخول أو الصلاحيات أو قواعد الوصول.</li>
+        <li>استغلال أي ثغرة أمنية أو اختبارها على الموقع دون إذن كتابي مسبق.</li>
+        <li>محاولة الوصول إلى حسابات أو بيانات أو ملفات أو محادثات أو مستندات تخص مستخدمين آخرين.</li>
+        <li>استخدام أدوات آلية أو Bots أو Scrapers أو برامج آلية لجمع المحتوى أو إغراق الموقع بالطلبات، ما لم يسمح الموقع بذلك صراحة.</li>
+        <li>إرسال طلبات أو بيانات مصممة لتعطيل الخوادم أو قواعد البيانات أو Firebase أو التخزين أو واجهات الموقع.</li>
+        <li>محاولة سرقة أو نسخ أو تعديل أو حذف بيانات الموقع أو بيانات المستخدمين دون تصريح.</li>
+        <li>نشر برمجيات ضارة أو روابط احتيالية أو ملفات ضارة أو أي محتوى يهدد أمن المستخدمين.</li>
+        <li>التحايل على الحظر أو القيود باستخدام حسابات أخرى أو وسائل تقنية بديلة.</li>
+        <li>استخدام الموقع في أي نشاط مخالف للقوانين أو حقوق الآخرين.</li>
+      </ul>
+
+      <h3>5. المحتوى والملكية الفكرية</h3>
+      <p>تبقى حقوق الملكية الفكرية للمحتوى لأصحابها أو أصحاب الحقوق المعنيين. لا تمنحك إتاحة المحتوى داخل MangaZERO حقًا تلقائيًا في نسخه أو إعادة نشره أو بيعه أو توزيعه خارج ما يسمح به القانون أو صاحب الحق.</p>
+      <p>إذا كنت تملك حقوق محتوى وتعتقد أن محتوى منشور عبر الخدمة ينتهك حقوقك، يمكنك التواصل مع إدارة الموقع عبر وسائل الدعم المتاحة وتقديم تفاصيل كافية للتحقق من البلاغ.</p>
+
+      <h3>6. التعليقات والمحتوى الذي ينشره المستخدم</h3>
+      <p>أنت مسؤول عن أي تعليق أو رسالة أو محتوى ترسله عبر الخدمة. يُمنع المحتوى المسيء أو التهديدي أو التشهيري أو الاحتيالي أو غير القانوني أو الذي ينتهك حقوق الآخرين أو يعرّض الموقع أو المستخدمين للخطر.</p>
+      <p>يحق للإدارة مراجعة أو إخفاء أو حذف المحتوى المخالف واتخاذ إجراءات على الحساب المرتبط به عند الحاجة لحماية الموقع والمستخدمين.</p>
+
+      <h3>7. البلاغات والدعم والمراجعة</h3>
+      <p>قد يتم الاحتفاظ بالبلاغات ومحادثات الدعم والبيانات المرتبطة بها بالقدر اللازم لتقديم الدعم والتحقق من المخالفات وحماية الخدمة. لا يجوز استخدام نظام البلاغات أو الدعم للإزعاج أو التهديد أو إرسال بلاغات كاذبة عمدًا.</p>
+
+      <h3>8. حماية الموقع والأمن</h3>
+      <p>يحظر أي تدخل متعمد في سلامة أو توفر الموقع، بما في ذلك محاولات تعطيل الخدمة، استنزاف الموارد، الوصول غير المصرح به، العبث بقاعدة البيانات، أو استغلال أخطاء التطبيق للحصول على صلاحيات غير مستحقة.</p>
+      <p>إذا اكتشفت ثغرة أمنية حقيقية، يُرجى إبلاغ الإدارة عبر قناة الدعم بدلًا من استغلالها أو نشر تفاصيلها بطريقة قد تضر بالمستخدمين.</p>
+
+      <h3>9. الإيقاف والحظر وإنهاء الحساب</h3>
+      <p>يجوز لـ MangaZERO، عند وجود سبب متعلق بالأمان أو إساءة الاستخدام أو مخالفة الشروط، تقييد بعض الميزات أو تعليق الحساب أو حظره أو إنهاء الوصول إلى الخدمة. وقد يتم ذلك دون إشعار مسبق عندما يكون الإجراء ضروريًا لحماية الموقع أو المستخدمين أو البيانات.</p>
+      <p>لا يجوز إنشاء حساب جديد بهدف الالتفاف على قرار حظر أو تقييد سابق.</p>
+
+      <h3>10. توفر الخدمة والتغييرات</h3>
+      <p>قد تتوقف بعض الميزات مؤقتًا بسبب الصيانة أو الأعطال أو تحديثات البنية التحتية أو خدمات الطرف الثالث. قد يتم تعديل أو إضافة أو إزالة ميزات الموقع عند الحاجة، ولا يضمن استمرار كل ميزة أو كل محتوى إلى الأبد.</p>
+
+      <h3>11. خدمات الطرف الثالث</h3>
+      <p>قد يعتمد الموقع على خدمات خارجية مثل Google وFirebase وغيرها. قد تخضع هذه الخدمات لشروط وسياسات مستقلة، وقد يؤثر توقفها أو تغييرها على بعض وظائف MangaZERO. لا نطلب منك تجاوز أو التحايل على سياسات تلك الخدمات.</p>
+
+      <h3>12. الخصوصية والبيانات</h3>
+      <p>يتم التعامل مع بيانات الحساب والبيانات التقنية والبيانات اللازمة لتشغيل الميزات وفق سياسة الخصوصية المعتمدة للموقع، وبالقدر اللازم لتشغيل الخدمة وحمايتها وتحسينها والامتثال للالتزامات القانونية عند انطباقها.</p>
+
+      <h3>13. إخلاء المسؤولية</h3>
+      <p>يتم توفير الخدمة على أساس التوفر الفعلي، ولا يُفهم من هذه الشروط أن MangaZERO يضمن أن الخدمة ستكون خالية من الأعطال أو الانقطاعات أو الأخطاء في جميع الأوقات. استخدم الخدمة على مسؤوليتك ووفق القوانين المعمول بها.</p>
+
+      <h3>14. حدود المسؤولية</h3>
+      <p>إلى أقصى حد يسمح به القانون المعمول به، لا يتحمل MangaZERO مسؤولية الأضرار الناتجة عن إساءة استخدام الخدمة من المستخدم أو عن انقطاع خدمات الطرف الثالث أو الأحداث الخارجة عن السيطرة المعقولة للموقع. لا يهدف هذا البند إلى استبعاد أي مسؤولية لا يجوز استبعادها قانونًا.</p>
+
+      <h3>15. التعديلات على الشروط</h3>
+      <p>قد يتم تحديث هذه الشروط لحماية الموقع أو إضافة ميزات أو توضيح القواعد. عند تغيير الإصدار بشكل جوهري، قد يُطلب منك الموافقة على الإصدار الجديد قبل مواصلة استخدام الخدمة. يتم حفظ إصدار الشروط الذي وافقت عليه مع حسابك.</p>
+
+      <h3>16. تطبيق القوانين</h3>
+      <p>تُفسر هذه الشروط وتُطبق بالقدر الذي يسمح به القانون المعمول به. أي بند غير قابل للتنفيذ قانونيًا لا يؤثر، بقدر ما يسمح به القانون، على باقي البنود. يجب تحديد القانون والاختصاص القضائي المناسبين للموقع بشكل نهائي وفق الجهة المالكة ومكان تشغيل الخدمة.</p>
+
+      <h3>17. التواصل والإشعارات</h3>
+      <p>يمكن استخدام قنوات الدعم داخل MangaZERO للتواصل بشأن الحساب أو البلاغات أو المشكلات التقنية أو طلبات حقوق المحتوى. يجب أن تكون المعلومات المقدمة في هذه الطلبات دقيقة قدر الإمكان.</p>
+
+      <h3>18. الإقرار النهائي</h3>
+      <p>باختيار «أوافق وأتابع»، تقر بأنك قرأت هذه الشروط، وأنك فهمت قواعد استخدام MangaZERO، وتوافق على الالتزام بها. الموافقة مرتبطة بحسابك وبنسخة الشروط الحالية، وقد يُطلب منك قبول نسخة جديدة مستقبلًا إذا تم تحديثها.</p>
+      <p style="margin-top:16px;font-size:12px;opacity:.75">ملاحظة: هذه صياغة شروط استخدام عامة وليست استشارة قانونية. يُنصح بمراجعتها من محامٍ في الدولة التي تعمل منها الخدمة قبل اعتمادها كوثيقة قانونية نهائية.</p>
+    </div>
+    <div id="mzTermsConsent" class="mz-terms-consent" style="display:none">
+      <label class="mz-terms-check"><input id="mzTermsCheckbox" type="checkbox"><span>قرأت الشروط والأحكام كاملة، وفهمتها، وأوافق على الالتزام بها.</span></label>
+      <div class="mz-terms-actions">
+        <button id="mzTermsAccept" class="mz-terms-accept" type="button" disabled>أوافق وأتابع</button>
+        <button id="mzTermsCancel" class="mz-terms-cancel" type="button">تسجيل الخروج</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCOUNT PAGE ===== -->
+<section id="mzAccountPage" class="mz-account-page">
+  <button id="mzAccountClose" class="mz-back">✕ إخفاء</button>
+  <div class="mz-account-card">
+    <div class="mz-account-head">
+      <div class="mz-account-logo">📖</div>
+      <h1 id="mzAccountTitle">تسجيل الدخول</h1>
+      <p id="mzAccountSubtitle">ادخل إلى حسابك في MangaZERO</p>
+    </div>
+
+    <div id="mzGoogleLoginBox">
+      <p style="text-align:center;color:#b9b0c5;margin:0 0 14px">سجّل الدخول أو أنشئ حسابك باستخدام Google</p>
+      <button id="mzGoogleLogin" class="mz-google-btn" type="button">
+        <span class="mz-google-icon">G</span>
+        <span>المتابعة باستخدام Google</span>
+      </button>
+      <div id="mzLoginMsg" class="mz-msg"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== MangaZERO SIDE MENU ===== -->
+<button id="mzMenuToggle" class="menu-toggle" type="button" aria-label="فتح القائمة"><span>☰</span></button>
+<div id="mzSideOverlay" class="mz-side-overlay"></div>
+<aside id="mzSidebar" class="mz-sidebar" aria-label="القائمة الجانبية">
+  <button id="mzSideClose" class="mz-side-close" type="button" aria-label="إغلاق">✕</button>
+  <div class="mz-side-title">MangaZERO</div>
+  <div id="mzSideUser" class="mz-side-user">
+    <strong>مرحبًا بك 👋</strong>
+    <span>سجّل دخولك للوصول لحسابك</span>
+  </div>
+  <button id="mzLoginOpen" class="mz-side-btn" type="button">🔐 تسجيل الدخول</button>
+  <button id="mzProfileOpen" class="mz-side-btn" type="button" style="display:none">👤 ملفي الشخصي</button>
+  <button id="mzHistoryOpen" class="mz-side-btn" type="button">🕘 سجل القراءة</button>
+  <button id="mzSupportOpen" class="mz-side-btn" type="button">💬 الدعم</button>
+  <button id="mzDownloadApp" class="mz-side-btn" type="button" onclick="mzOpenDownload()">📥 تحميل التطبيق</button>
+  <button id="mzStoreOpen" class="mz-side-btn" type="button" style="display:none">🛒 المتجر</button>
+  <button id="mzTasksOpen" class="mz-side-btn" type="button" style="display:none">🎯 المهام</button>
+  <button id="mzThemeToggle" class="mz-side-btn" type="button">🌙 الوضع الليلي</button>
+  <button id="mzLogout" class="mz-side-btn" type="button" style="display:none">🚪 تسجيل الخروج</button>
+</aside>
+
+<!-- ===== TASKS PAGE ===== -->
+<div id="mzTasksPage" class="mz-system-page" aria-hidden="true">
+  <div class="mz-system-inner">
+    <div class="mz-system-head">
+      <div class="mz-system-head-main"><button id="mzTasksBack" class="mz-system-back">←</button><h2>🎯 المهام</h2></div>
+      <div id="mzTasksHeadPoints" class="mz-points-pill">💰 <b>0</b> نقطة</div>
+    </div>
+    <div class="mz-points-card"><div><div class="mz-points-card-label">رصيدك الحالي</div><div id="mzTasksPoints" class="mz-points-number">0</div></div><div>⭐</div></div>
+    <section class="mz-task-section">
+      <h3>📅 المهام اليومية</h3><div class="mz-task-section-note">المهام اليومية بتبدأ من جديد تلقائيًا بعد منتصف الليل.</div>
+      <div id="mzDailyTasksList"></div>
+    </section>
+    <section class="mz-task-section"><h3>🌐 مهام الموقع</h3><div class="mz-task-section-note">مهام يضيفها الأدمن من لوحة التحكم.</div><div id="mzSiteTasksList"></div></section>
+  </div>
+</div>
+
+<!-- ===== STORE PAGE ===== -->
+<div id="mzStorePage" class="mz-system-page" aria-hidden="true">
+  <div class="mz-system-inner">
+    <div class="mz-system-head">
+      <div class="mz-system-head-main"><button id="mzStoreBack" class="mz-system-back">←</button><h2>🛒 المتجر</h2></div>
+      <div id="mzStoreHeadPoints" class="mz-points-pill">💰 <b>0</b> نقطة</div>
+    </div>
+    <div class="mz-points-card"><div><div class="mz-points-card-label">رصيدك الحالي</div><div id="mzStorePoints" class="mz-points-number">0</div></div><div>🪙</div></div>
+    <section class="mz-store-section"><h3>🛍️ المنتجات</h3><div id="mzStoreProducts"></div></section>
+  </div>
+</div>
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="brand">
+
+        <button id="homeLogo" class="logo" type="button" aria-label="العودة إلى الصفحة الرئيسية">
+            <img src="logo.png" alt="MangaZERO" class="mz-logo-img">
+        </button>
+
+        <div class="brand-name">
+            Manga<span>ZERO</span>
+        </div>
+
+    </div>
+
+
+    <button
+        id="adminButton"
+        class="admin-main-button"
+        style="display:none;">
+
+        🛡️ الأدمن
+
+    </button>
+
+</header>
+
+
+<!-- =========================================
+     MAIN SITE
+========================================= -->
+
+<div id="sitePage">
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="normal-nav">
+
+        <button
+            class="active"
+            data-site="home">
+
+            🏠 الرئيسية
+
+        </button>
+
+
+        <button
+            data-site="latest">
+
+            🕒 الأحدث
+
+        </button>
+
+
+        <button
+            data-site="best">
+
+            🔥 الأفضل
+
+        </button>
+
+
+        <button
+            data-site="notifications">
+
+            🔔 الإشعارات
+
+        </button>
+
+    </nav>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <span class="search-icon">
+            🔍
+        </span>
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="دور على مانجا أو مؤلف...">
+
+    </div>
+
+
+    <!-- ONLINE -->
+
+    <div class="online">
+
+        <span class="online-dot"></span>
+
+        <span>
+            1 نشط الآن
+        </span>
+
+    </div>
+
+
+    <!-- LIBRARY -->
+
+    <div class="section-title">
+
+        📚 المكتبة
+
+        <span
+            id="homeMangaCount"
+            style="color:#77717e">
+
+            (0)
+
+        </span>
+
+    </div>
+
+
+    <!-- HOME MANGA -->
+
+    <div
+        id="homeMangaGrid"
+        class="manga-grid">
+
+    </div>
+
+
+    <!-- EMPTY -->
+
+    <div
+        id="emptyLibrary"
+        class="empty-library">
+
+        <div class="empty-icon">
+            📚
+        </div>
+
+        <h2>
+            المكتبة فاضية لسه
+        </h2>
+
+        <p>
+            أول مانجا تنزلها هتظهر هنا فورًا
+        </p>
+
+    </div>
+
+
+</div>
+
+
+<!-- =========================================
+     ADMIN PAGE
+========================================= -->
+
+<div id="adminPage">
+
+
+    <!-- ADMIN NAV -->
+
+    <nav class="admin-nav">
+
+        <button
+            class="active"
+            data-admin-nav="manga">
+
+            📖 المانجا
+
+        </button>
+
+
+        <button
+            data-admin-nav="reports">
+
+            🚩 البلاغات <span id="adminReportNavBadge" class="admin-report-count-badge"></span>
+
+        </button>
+
+
+        <button
+            data-admin-nav="support">
+
+            💬 رسائل المستخدمين
+
+        </button>
+
+
+        <button
+            data-admin-nav="users">
+
+            👥 المستخدمين
+
+        </button>
+
+
+        <button
+            data-admin-nav="bans">
+
+            🚫 الحظر
+
+        </button>
+
+
+        <button
+            data-admin-nav="helpers">
+
+            👤 المساعدون
+
+        </button>
+
+        <button data-admin-nav="tasks">🎯 المهام والمتجر</button>
+
+    </nav>
+
+
+    <!-- =====================================
+         STATS
+    ====================================== -->
+
+    <div class="stats">
+
+
+        <div class="stat">
+
+            <div class="stat-icon blue">
+                📄
+            </div>
+
+            <div
+                id="chapterCount"
+                class="stat-number">
+
+                0
+
+            </div>
+
+            <div class="stat-name">
+                فصول
+            </div>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon purple">
+                📖
+            </div>
+
+            <div
+                id="mangaCount"
+                class="stat-number">
+
+                0
+
+            </div>
+
+            <div class="stat-name">
+                مانجا
+            </div>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon green">
+                👥
+            </div>
+
+            <div id="adminUserCount" class="stat-number">
+                0
+            </div>
+
+            <div class="stat-name">
+                مستخدمون
+            </div>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div class="stat-icon yellow">
+                🚩
+            </div>
+
+            <div id="adminReportCount" class="stat-number">
+                0
+            </div>
+
+            <div class="stat-name">
+                بلاغات جديدة
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================
+         ADMIN TABS
+    ====================================== -->
+
+    <div class="admin-tabs">
+
+
+        <button
+            class="admin-tab active"
+            data-admin-tab="manga">
+
+            <span>
+                📖
+            </span>
+
+            المانجا والفصول
+
+        </button>
+
+
+        <button
+            class="admin-tab"
+            data-admin-tab="reports">
+
+            <span>
+                🚩
+            </span>
+
+            البلاغات <span id="adminReportTabBadge" class="admin-report-count-badge"></span>
+
+        </button>
+
+
+        <button
+            class="admin-tab"
+            data-admin-tab="users">
+
+            <span>
+                👥
+            </span>
+
+            المستخدمين
+
+        </button>
+
+
+        <button
+            class="admin-tab"
+            data-admin-tab="helpers">
+
+            <span>
+                👤
+            </span>
+
+            المساعدون
+
+        </button>
+
+
+    </div>
+
+
+    <!-- =====================================
+         MANGA SECTION
+    ====================================== -->
+
+    <section
+        id="mangaSection">
+
+
+        <div class="add-box">
+
+
+            <div
+                id="addHeader"
+                class="add-header">
+
+
+                <div class="add-title">
+
+                    إضافة مانجا / مانجا جديدة
+
+                </div>
+
+
+                <div
+                    id="addPlus"
+                    class="add-plus">
+
+                    ＋
+
+                </div>
+
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div
+                id="addForm"
+                class="add-form">
+
+
+                <input
+                    id="mangaName"
+                    class="input"
+                    type="text"
+                    placeholder="اسم المانجا">
+
+
+                <input
+                    id="mangaAuthor"
+                    class="input"
+                    type="text"
+                    placeholder="اسم المؤلف">
+
+
+                <textarea
+                    id="mangaDescription"
+                    class="input textarea"
+                    placeholder="وصف المانجا"></textarea>
+
+                <div class="file-input-wrap">
+                    <label for="mangaCover">🖼️ صورة غلاف المانجا</label>
+                    <input id="mangaCover" type="file" accept="image/*">
+                </div>
+
+                <button
+                    id="saveManga"
+                    class="save-button">
+
+                    ➕ إضافة المانجا
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- MANAGEMENT -->
+
+        <div class="admin-content">
+
+
+            <div class="admin-section-title">
+
+                📖 إدارة المانجا والفصول
+
+            </div>
+
+
+            <div
+                id="adminMangaGrid"
+                class="manga-grid">
+
+            </div>
+
+
+            <div
+                id="adminEmpty"
+                class="admin-empty">
+
+                ضيف مانجا الأول عشان تقدر تنزل لها فصول
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================
+         TASKS + STORE MANAGEMENT
+    ====================================== -->
+    <section id="tasksSection" class="admin-content" style="display:none;">
+      <div class="admin-section-title">🎯 إدارة المهام والمتجر</div>
+      <div class="mz-admin-task-form">
+        <div style="font-weight:900;margin-bottom:10px">➕ إضافة مهمة للموقع</div>
+        <input id="adminTaskTitle" class="input" placeholder="عنوان المهمة">
+        <select id="adminTaskType" class="input" style="height:53px">
+          <option value="chapters">📖 فصول</option>
+          <option value="comments">💬 تعليقات</option>
+        </select>
+        <input id="adminTaskTarget" class="input" type="number" min="1" max="10000" value="3" placeholder="عدد الفصول/التعليقات المطلوب">
+        <input id="adminTaskPoints" class="input" type="number" min="1" max="10000" value="5" placeholder="عدد النقاط عند الإنجاز">
+        <div style="font-size:12px;color:#92889c;margin-top:8px">اختار نوع المهمة وحدد العدد. التقدم بيتحسب تلقائيًا عند القراءة أو التعليق.</div>
+        <button id="adminTaskAdd" class="save-button">➕ إضافة المهمة</button>
+      </div>
+      <div class="admin-section-title" style="margin-top:10px">🌐 مهام الموقع الحالية</div>
+      <div id="adminTaskList" class="mz-admin-task-list"></div>
+      <div class="mz-admin-task-form" style="margin-top:18px">
+        <div style="font-weight:900;margin-bottom:10px">💰 إعطاء نقاط لمستخدم</div>
+        <input id="adminPointsManualEmail" class="input" type="email" placeholder="📧 اكتب إيميل المستخدم" autocomplete="off">
+        <input id="adminPointsAmount" class="input" type="number" min="1" max="1000000" placeholder="💰 عدد النقاط">
+        <div id="adminPointsManualStatus" style="display:none;font-size:13px;margin-top:7px"></div>
+        <button id="adminGivePoints" class="save-button" type="button">💰 إرسال النقاط لصاحب الإيميل</button>
+      </div>
+      <div class="mz-admin-product-form" style="margin-top:18px">
+        <div style="font-weight:900;margin-bottom:10px">🛒 إضافة منتج للمتجر</div>
+        <input id="adminProductName" class="input" placeholder="اسم المنتج">
+        <textarea id="adminProductDesc" class="input textarea" placeholder="وصف المنتج"></textarea>
+        <input id="adminProductPoints" class="input" type="number" min="1" max="1000000" placeholder="السعر بالنقاط">
+        <input id="adminProductImage" class="input" placeholder="رابط صورة المنتج (اختياري)">
+        <button id="adminProductAdd" class="save-button">➕ إضافة المنتج</button>
+      </div>
+      <div class="admin-section-title" style="margin-top:10px">📦 منتجات المتجر الحالية</div>
+      <div id="adminProductList" class="mz-admin-task-list"></div>
+    </section>
+
+    <!-- =====================================
+         REPORTS
+    ====================================== -->
+
+    <section id="reportsSection" class="admin-content" style="display:none;">
+        <div class="admin-section-title">🚩 إدارة البلاغات</div>
+        <div id="reportsList" class="admin-users-list"><div class="admin-empty">جاري تحميل البلاغات...</div></div>
+    </section>
+
+
+    <!-- =====================================
+         PRIVATE SUPPORT CHATS
+    ====================================== -->
+
+    <section id="supportSection" class="admin-content" style="display:none;">
+        <div class="admin-section-title">💬 رسائل المستخدمين الخاصة</div>
+        <div class="admin-support-layout">
+          <div id="adminSupportUsers" class="admin-support-users"><div class="admin-support-empty">جاري تحميل المحادثات...</div></div>
+          <div class="admin-support-chat">
+            <div id="adminSupportSelected" class="admin-support-selected">اختار مستخدم عشان تفتح المحادثة</div>
+            <div id="adminSupportMessages" class="mz-support-messages"><div class="admin-support-empty">مفيش محادثة مفتوحة.</div></div>
+            <div class="mz-support-form"><input id="adminSupportInput" class="mz-support-input" maxlength="1000" placeholder="اكتب ردك للمستخدم..."/><button id="adminSupportSend" class="mz-support-send">إرسال</button></div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================
+         USERS
+    ====================================== -->
+
+    <section id="usersSection" class="admin-content" style="display:none;">
+        <div class="admin-section-title">👥 إدارة المستخدمين</div>
+        <div class="admin-user-search-wrap">
+            <div class="admin-user-search-title">🔎 البحث عن مستخدم بالإيميل</div>
+            <div class="admin-user-search-row">
+                <input id="adminUserEmailSearch" class="admin-user-search" type="email" inputmode="email" autocomplete="off" placeholder="اكتب الإيميل للبحث...">
+                <button id="adminUserEmailSearchClear" class="admin-user-search-clear" type="button">مسح</button>
+            </div>
+            <div class="admin-user-search-hint">اكتب جزء من الإيميل أو الإيميل كاملًا، والنتائج هتتفلتر فورًا.</div>
+        </div>
+        <div id="usersCountText" class="admin-empty" style="margin-bottom:14px;">جاري تحميل المستخدمين...</div>
+        <div id="usersList" class="admin-users-list"></div>
+    </section>
+
+
+    <!-- =====================================
+         BANS
+    ====================================== -->
+
+    <section id="bansSection" class="admin-content" style="display:none;">
+        <div class="admin-section-title">🚫 صفحة الحظر</div>
+        <div class="admin-ban-panel">
+            <div class="admin-ban-panel-title">نظام الحظر والتقييد</div>
+            <div class="admin-ban-panel-note">
+                <b>الحظر الكامل</b> يمنع الحساب من دخول الموقع، بينما <b>التقييد</b> يسمح له بالمشاهدة والقراءة وتسجيل الخروج فقط، ويمنع التعليقات والبلاغات والرسائل وتعديل الحساب. الحظر مرتبط بالحساب نفسه ويعمل من أي جهاز.
+            </div>
+        </div>
+        <div id="bansCountText" class="admin-empty" style="margin-bottom:14px;">جاري تحميل المستخدمين...</div>
+        <div id="bansList" class="admin-users-list"></div>
+    </section>
+
+
+    <!-- =====================================
+         HELPERS
+    ====================================== -->
+
+    <section id="helpersSection" class="admin-content" style="display:none;">
+        <div class="admin-section-title">👤 إدارة المساعدين</div>
+        <div class="add-box" style="margin-bottom:18px;">
+            <div class="add-form open" style="display:block;">
+                <div class="mz-helper-picker" id="helperPicker">
+                    <button type="button" id="helperPickerBtn" class="input mz-helper-picker-btn">
+                        <span id="helperPickerText">اختر مستخدمًا من المسجلين في الموقع</span>
+                        <span class="mz-helper-picker-arrow">⌄</span>
+                    </button>
+                    <div id="helperPickerPanel" class="mz-helper-picker-panel" style="display:none;">
+                        <div class="mz-helper-search-wrap">
+                            <span>🔎</span>
+                            <input id="helperUserSearch" type="text" autocomplete="off" placeholder="ابحث بالاسم أو الإيميل...">
+                        </div>
+                        <div id="helperUserList" class="mz-helper-user-list">
+                            <div class="admin-empty">جاري تحميل المستخدمين...</div>
+                        </div>
+                    </div>
+                </div>
+                <input id="helperEmailInput" type="hidden" value="">
+                <button id="addHelperBtn" class="save-button">➕ إضافة مساعد</button>
+                <div style="margin-top:10px;font-size:13px;opacity:.75;">اختار المستخدم من القائمة بدل كتابة الإيميل يدويًا. يجب أن يكون مسجلًا في الموقع من قبل.</div>
+            </div>
+        </div>
+        <div id="helpersList" class="admin-users-list"><div class="admin-empty">جاري تحميل المساعدين...</div></div>
+    </section>
+
+
+    <!-- =====================================
+         EXIT
+    ====================================== -->
+
+    <button
+        id="exitAdmin"
+        class="exit-button">
+
+        ← الرجوع إلى MangaZERO
+
+    </button>
+
+
+</div>
+
+
+<!-- MANGA DETAILS / CHAPTERS PAGE -->
+<div id="mangaPage" class="manga-page">
+  <div class="manga-page-header"><button id="mangaPageBack" class="manga-page-back">← رجوع</button><div id="mangaPageTitle" class="manga-page-title">المانجا</div></div>
+  <div class="manga-page-inner">
+    <div id="mangaDetailBox"></div>
+    <div id="mangaPageActions" class="manga-page-actions">
+      <button id="showCommentsBtn" class="manga-page-action">💬 التعليقات</button>
+      <button id="showChaptersBtn" class="manga-page-action active">📚 الفصول</button>
+    </div>
+    <div id="mangaCommentsView"></div>
+    <div id="chapterListView"><div class="admin-section-title">📚 الفصول</div><div id="publicChapterList" class="chapter-list"></div></div>
+    <div id="chapterReader" class="chapter-reader"><button id="readerBack" class="manga-page-back reader-back">← كل الفصول</button><h2 id="readerTitle" class="reader-title"></h2><div id="readerPages" class="reader-pages"></div>
+<div id="mzChapterAd" class="mz-chapter-ad-wrap" aria-label="إعلان">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8457182771905589" data-ad-slot="2416012327" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+<div id="chapterComments" class="chapter-comments">
+  <div class="chapter-comments-head">
+    <div class="admin-section-title">💬 تعليقات الفصل</div>
+    <div id="chapterCommentsChapterName" class="chapter-comments-subtitle"></div>
+  </div>
+  <div id="chapterCommentsBox"></div>
+</div>
+<div id="nextChapterWrap" class="next-chapter-wrap"></div>
+</div>
+  </div>
+</div>
+
+<!-- TOAST -->
+
+<div id="toast"></div>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+
+
+
+<!-- ===== FIREBASE AUTH ===== -->
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore-compat.js"></script>
+<script src="app.js"></script>
+
+
+
+
+
+
+<!-- ===== PROFILE CLOSE FALLBACK ===== -->
+
+
+<script type="text/plain" id="MZ_FIRESTORE_READING_HISTORY_RULE">
+match /mangaZERO_reading_history/{uid}/mangas/{mangaId} {
+  allow read: if request.auth != null && request.auth.uid == uid;
+  allow create, update: if request.auth != null
+    && request.auth.uid == uid
+    && request.resource.data.mangaId is string
+    && request.resource.data.chapterId is string
+    && request.resource.data.chapterNumber is int;
+  allow delete: if request.auth != null && request.auth.uid == uid;
+}
+</script>
+
+
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){})})}</script>
+
+<div id="mzDownloadPage" class="mz-dl-page" aria-hidden="true">
+  <div class="mz-dl-top">
+    <button class="mz-dl-back" type="button" onclick="mzCloseDownload()">→ رجوع</button>
+    <div class="mz-dl-brand">MangaZERO</div>
+  </div>
+  <div class="mz-dl-hero">
+    <img class="mz-dl-icon" src="logo.png" alt="MangaZERO">
+    <h1>حمّل تطبيق MangaZERO</h1>
+    <p>نفس الموقع ونفس حسابك، بس بأيقونة على شاشتك ويفتح أسرع.</p>
+  </div>
+  <a class="mz-dl-btn" href="mangazero.apk" download>⬇️ تحميل ملف APK</a>
+  <div class="mz-dl-meta">الإصدار 1.0 · أندرويد</div>
+  <div class="mz-dl-card">
+    <h2>طريقة التثبيت</h2>
+    <div class="mz-dl-step"><div class="mz-dl-num">1</div><p>اضغط زر التحميل فوق واستنى الملف ينزل.</p></div>
+    <div class="mz-dl-step"><div class="mz-dl-num">2</div><p>افتح الملف من الإشعار أو من مجلد التنزيلات.</p></div>
+    <div class="mz-dl-step"><div class="mz-dl-num">3</div><p>لو ظهرت رسالة «التثبيت من مصدر غير معروف»، اختار «السماح» وكمّل.</p></div>
+    <div class="mz-dl-step"><div class="mz-dl-num">4</div><p>اضغط «تثبيت»، وبعدها افتح التطبيق من شاشتك عادي.</p></div>
+  </div>
+  <div class="mz-dl-note">أي مانجا أو فصل تضيفه على الموقع بيظهر في التطبيق على طول، لأن الاتنين بيقروا نفس البيانات.</div>
+</div>
+<script>
+function mzOpenDownload(){
+  var p=document.getElementById('mzDownloadPage');
+  if(!p) return;
+  var c=document.getElementById('mzSideClose');
+  if(c) c.click();
+  p.classList.add('open');
+  p.setAttribute('aria-hidden','false');
+  document.body.classList.add('mz-dl-open');document.body.style.overflow='hidden';
+  p.scrollTop=0;
+}
+function mzCloseDownload(){
+  var p=document.getElementById('mzDownloadPage');
+  if(!p) return;
+  p.classList.remove('open');
+  p.setAttribute('aria-hidden','true');
+  document.body.classList.remove('mz-dl-open');document.body.style.overflow='';
+}
+</script>
+</body>
+
+</html>
